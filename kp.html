@@ -17,7 +17,7 @@
       <a href="https://www.hd.kinopoisk.ru/">
           <span>Онлайн-кинотеатр</span>
       </a>
-      <form class="#" action="#" method="post">
+      <form class="#" action="#" method="post" enctype="multipart/form-data">
           <input class="inp" type="text" name="search" value="" placeholder="Фильмы, сериалы, персоны">
       </form>
     </header>
@@ -33,19 +33,19 @@
       </div>
 
         <form action="#" method="post" enctype="multipart/form-data">
-          <h1>Выбор фильмов</h1>
+          <h1 class="mainform mainfont">Выбор фильмов</h1>
           <div>
-            <p>Любимый фильм</p>
-            <input tabindex="1" type="text" name="lc" placeholder="Здесь нужно написать название какого-нибудь фильма">
+            <p class="mainfont">Любимый фильм</p>
+            <input class="secfont blockformat" tabindex="1" type="text" name="lc" placeholder="Здесь нужно написать название какого-нибудь фильма">
           </div>
 
           <div>
-            <p>Год, когда он вышел?</p>
-            <input tabindex="2" type="tel" name="cy" placeholder="1999">
+            <p class="mainfont">Год, когда он вышел?</p>
+            <input class="secfont blockformat" tabindex="2" type="tel" name="cy" placeholder="1999">
           </div>
 
-          <div>
-            <p>Его оценка</p>
+          <p class="mainfont">Его оценка</p>
+          <div class="mark">
             <input tabindex="3" type="radio" name="mark1" value="1"> 1-Чудовищно
             <input tabindex="3" type="radio" name="mark1" value="2"> 2-Ужасно
             <input tabindex="3" type="radio" name="mark1" value="3"> 3-Очень плохо
@@ -60,28 +60,29 @@
 
             <br>
 
-          <div class="">
+          <div class="mainfont">
             <p>Выберем еще любимых фильмов</p>
             <input tabindex="4" type="checkbox" name="sho" value=""> Побег из Шоушенка
             <input tabindex="4" type="checkbox" checked name="matrix1" value=""> Матрица
             <input tabindex="4" type="checkbox" name="hatef" value=""> Омерзительная восьмерка
           </div>
 
-          <div class="">
-            <p>Самый отвратательный фильм всех времен</p>
-            <select tabindex="5" name="buebue">
+          <p>Самый отвратательный фильм всех времен</p>
+          <div>
+            <select class="mainfont blockformat" tabindex="5" name="buebue">
               <option value="it">Оно</option>
               <option selected value="pazh">Экипаж</option>
               <option value="elef">Человек-слон</option>
+            </select>
           </div>
 
-          <div class="">
-            <p>Почему мне не нравится этот фильм</p>
-            <input tabindex="6" type="textarea" name="txt1" value="">
+          <p>Почему мне не нравится этот фильм</p>
+          <div>
+            <textarea class="mainfont blockformat" tabindex="6" name="txt1" value="">   </textarea>
           </div>
 
-          <div class="">
-            <button tabindex="7" type="submit" name="goopros">Отправить</button>
+          <div>
+            <button class="go" tabindex="7" type="submit" name="goopros">Отправить</button>
           </div>
 
         </form>
