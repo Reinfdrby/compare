@@ -2,29 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Сравнение цен</title>
+    <title>Сравнение</title>
     <link rel="stylesheet" href="sty.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marmelad&family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header1">
-        <a href="https://github.com/">
-            <img class="img1" src="im/gh.jpg" alt="gh">
+    <header>
+      <div class="header1">
+        <a href="https://bitbucket.org/">
+            <img class="img1" src="logo.png" alt="gh" height="30">
         </a>
+      </div>
     </header>
 
-    <main>  
-        <div class="poezd">
-            <a href="kp.html">
-                <img class = "img1" src="im/kp.jpg" alt="Kinopoisk-for-me"     height: 25px;>
-            </a>
-            <br> </br>
-            <a href="gh.html">
-                <img class="img1" src="im/gh.jpg" alt="my github"     height: 35px;>
-            </a>
-        </div>
+    <main>
+        <div class="poezd"></div>
         </div>
         <div id='container'>
             <form>
