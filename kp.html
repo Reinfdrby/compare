@@ -6,15 +6,85 @@
     <link rel="stylesheet" href="sty-kp.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://db.onlinewebfonts.com/c/a1750a4dae8db954fdd595f313b3b34e?family=Graphik+Kinopoisk+LC+Web+SB" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Marmelad&family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header1">
-        <a href=""></a>
+      <a href="https://www.kinopoisk.ru/">
+          <img src="im/kp.jpg" alt="kinopoisk" height="30px">
+      </a>
+      <a href="https://www.hd.kinopoisk.ru/">
+          <span>Онлайн-кинотеатр</span>
+      </a>
+      <form class="#" action="#" method="post">
+          <input class="inp" type="text" name="search" value="" placeholder="Фильмы, сериалы, персоны">
+      </form>
     </header>
 
     <main>
-       
+      <!--слой белой подложки высотой на всю страиницу от хэдера до футера и шириной больше функциональных блоков сайта-->
+      <div class="">
+      </div>
+
+      <!--функциональные блоки данных-->
+      <div class="">
+
+      </div>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+          <h1>Выбор фильмов</h1>
+          <div>
+            <p>Любимый фильм</p>
+            <input tabindex="1" type="text" name="lc" placeholder="Здесь нужно написать название какого-нибудь фильма">
+          </div>
+
+          <div>
+            <p>Год, когда он вышел?</p>
+            <input tabindex="2" type="tel" name="cy" placeholder="1999">
+          </div>
+
+          <div>
+            <p>Его оценка</p>
+            <input tabindex="3" type="radio" name="mark1" value="1"> 1-Чудовищно
+            <input tabindex="3" type="radio" name="mark1" value="2"> 2-Ужасно
+            <input tabindex="3" type="radio" name="mark1" value="3"> 3-Очень плохо
+            <input tabindex="3" type="radio" name="mark1" value="4"> 4-Плохо
+            <input tabindex="3" checked type="radio" name="mark1" value="5"> 5-Средне или не досмотрел
+            <input tabindex="3" type="radio" name="mark1" value="6"> 6-Один раз, не больше
+            <input tabindex="3" type="radio" name="mark1" value="7"> 7-Хорошо
+            <input tabindex="3" type="radio" name="mark1" value="8"> 8-Очень хорошо
+            <input tabindex="3" type="radio" name="mark1" value="9"> 9-Шедевр
+            <input tabindex="3" type="radio" name="mark1" value="10"> 10-Гениально
+          </div>
+
+            <br>
+
+          <div class="">
+            <p>Выберем еще любимых фильмов</p>
+            <input tabindex="4" type="checkbox" name="sho" value=""> Побег из Шоушенка
+            <input tabindex="4" type="checkbox" checked name="matrix1" value=""> Матрица
+            <input tabindex="4" type="checkbox" name="hatef" value=""> Омерзительная восьмерка
+          </div>
+
+          <div class="">
+            <p>Самый отвратательный фильм всех времен</p>
+            <select tabindex="5" name="buebue">
+              <option value="it">Оно</option>
+              <option selected value="pazh">Экипаж</option>
+              <option value="elef">Человек-слон</option>
+          </div>
+
+          <div class="">
+            <p>Почему мне не нравится этот фильм</p>
+            <input tabindex="6" type="textarea" name="txt1" value="">
+          </div>
+
+          <div class="">
+            <button tabindex="7" type="submit" name="goopros">Отправить</button>
+          </div>
+
+        </form>
 
     </main>
 
