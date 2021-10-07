@@ -1,5 +1,5 @@
 * {
-    font-family: 'Marmelad', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
     border: 0;
@@ -16,9 +16,9 @@ html, body {
 }
 
 *,*:before, *:after{
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 :focus, :active{outline: none;}
 a:focus, a:active{outline: none;}
@@ -26,34 +26,50 @@ a:focus, a:active{outline: none;}
 nav, footer, header, aside {display: block;}
 
 
-
 body {
-    /*background-image: url(im/AE1.png);
-    background-color: rgb(200, 26, 11);*/
-    background-color: white;
-}
-
-inp {
-
+    /*background-image: url(im/AE1.png);*/
+    background-color: rgba(244, 244, 244, 1);  
+    /* Затемнение фоновой картинки для улучшения читаемости текста на фоне картинки
+    background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url("landscape.jpg") center/cover;*/
 }
 
 .header1 {
   background-color: black;
-  opacity: 1;
   height: 50px;
   width: 100%;
-  position: fixed;
   top: 0px;
   left: 0px;
+  }
+
+.header2 {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  margin-left: 30px
 }
 
-.mark {
+.center_block {
+  background-color: #ffffff;
+  margin: 0px 30px 0px 30px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.markfont {
   font-size: 12px;
   font-family: 'Marmelad', sans-serif;
 }
 
 .mainfont {
   font-size: 15px;
+}
+
+.article_font{
+  font-size: 16px;
+  font-weight: 600;
+  margin: 15px 0px 5px 0px;
 }
 
 .mainform {
@@ -66,14 +82,32 @@ inp {
 }
 
 .blockformat {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto 10px auto;
+  padding: 5px;
   text-align: center;
   width: 50%;
-  border-radius: 4px;
+  min-width: 300px;
+  max-width: 450px;
+  height: 30px;
+  border-radius: 3px;
   border-color: gray;
   border-width: 1px;
   box-shadow: 2px 2px 5px 1px rgb(78, 73, 72);
+}
+
+.top_block {
+  background:rgba(255, 255, 255, 1);
+  margin: 0px 40px 0px 40px;
+  width: auto;
+  height: 600px;
+  padding: 5px;
+}
+
+.trailer {
+  min-width: 900px;
+  height: 700px;
+  background: #000000;
+  border-radius: 3px;
 }
 
 .go {

@@ -11,41 +11,36 @@
 </head>
 <body>
     <header class="header1">
-      <a href="https://www.kinopoisk.ru/">
-          <img src="im/kp.jpg" alt="kinopoisk" height="30px">
-      </a>
-      <a href="https://www.hd.kinopoisk.ru/">
-          <span>Онлайн-кинотеатр</span>
-      </a>
+      <a href="https://www.kinopoisk.ru/ alt="kinopoisk"> ПОИСК</a>
+      <a href="https://www.hd.kinopoisk.ru/"> HD </a>
       <form class="#" action="#" method="post" enctype="multipart/form-data">
-          <input class="inp" type="text" name="search" value="" placeholder="Фильмы, сериалы, персоны">
+          <input type="text" name="search" value="" placeholder="Фильмы, сериалы, персоны">
       </form>
     </header>
 
     <main>
       <!--слой белой подложки высотой на всю страиницу от хэдера до футера и шириной больше функциональных блоков сайта-->
-      <div class="">
+      <div class="top_block">
+        <!--функциональные блоки данных-->
+        <div class=trailer">
+        </div>  
       </div>
 
-      <!--функциональные блоки данных-->
-      <div class="">
-
-      </div>
-
+        <div class="center_block">      
         <form action="#" method="post" enctype="multipart/form-data">
-          <h1 class="mainform mainfont">Выбор фильмов</h1>
+          <h1 class="mainform article_font">Выбор фильмов</h1>
           <div>
-            <p class="mainfont">Любимый фильм</p>
+            <p class="article_font">Любимый фильм</p>
             <input class="secfont blockformat" tabindex="1" type="text" name="lc" placeholder="Здесь нужно написать название какого-нибудь фильма">
           </div>
 
           <div>
-            <p class="mainfont">Год, когда он вышел?</p>
+            <p class="article_font">Год, когда он вышел?</p>
             <input class="secfont blockformat" tabindex="2" type="tel" name="cy" placeholder="1999">
           </div>
 
-          <p class="mainfont">Его оценка</p>
-          <div class="mark">
+          <p class="article_font">Его оценка</p>
+          <div class="markfont">
             <input tabindex="3" type="radio" name="mark1" value="1"> 1-Чудовищно
             <input tabindex="3" type="radio" name="mark1" value="2"> 2-Ужасно
             <input tabindex="3" type="radio" name="mark1" value="3"> 3-Очень плохо
@@ -60,25 +55,25 @@
 
             <br>
 
-          <div class="mainfont">
-            <p>Выберем еще любимых фильмов</p>
-            <input tabindex="4" type="checkbox" name="sho" value=""> Побег из Шоушенка
-            <input tabindex="4" type="checkbox" checked name="matrix1" value=""> Матрица
-            <input tabindex="4" type="checkbox" name="hatef" value=""> Омерзительная восьмерка
+          <div>
+            <p class="article_font">Выберем еще любимых фильмов</p>
+            <input class="markfont" tabindex="4" type="checkbox" name="sho" value=""> Побег из Шоушенка
+            <input class="markfont" tabindex="4" type="checkbox" checked name="matrix1" value=""> Матрица
+            <input class="markfont" tabindex="4" type="checkbox" name="hatef" value=""> Омерзительная восьмерка
           </div>
 
-          <p>Самый отвратательный фильм всех времен</p>
+          <p class="article_font">Самый отвратательный фильм всех времен</p>
           <div>
-            <select class="mainfont blockformat" tabindex="5" name="buebue">
+            <select class="markfont blockformat" tabindex="5" name="buebue">
               <option value="it">Оно</option>
               <option selected value="pazh">Экипаж</option>
               <option value="elef">Человек-слон</option>
             </select>
           </div>
 
-          <p>Почему мне не нравится этот фильм</p>
+          <p class="article_font">Почему мне не нравится этот фильм</p>
           <div>
-            <textarea class="mainfont blockformat" tabindex="6" name="txt1" value="">   </textarea>
+            <textarea class="markfont blockformat" tabindex="6" name="txt1" value="">   </textarea>
           </div>
 
           <div>
@@ -86,7 +81,7 @@
           </div>
 
         </form>
-
+        </div>
     </main>
 
 </body>
