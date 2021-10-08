@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <title>My Kinopoisk</title>
     <link rel="stylesheet" href="sty-kp.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://db.onlinewebfonts.com/c/a1750a4dae8db954fdd595f313b3b34e?family=Graphik+Kinopoisk+LC+Web+SB" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Marmelad&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header1">
@@ -26,38 +24,42 @@
         </div>  
       </div>
 
-        <div class="center_block">      
+      <div class="center_block">      
         <form action="#" method="post" enctype="multipart/form-data">
-          <h1 class="mainform article_font">Выбор фильмов</h1>
-          <div>
+          <h1 class="article_font">Выбор фильмов</h1>
+          <div class="blockcenter">
             <p class="article_font">Любимый фильм</p>
             <input class="secfont blockformat" tabindex="1" type="text" name="lc" placeholder="Здесь нужно написать название какого-нибудь фильма">
           </div>
 
-          <div>
+          <div class="blockcenter">
             <p class="article_font">Год, когда он вышел?</p>
             <input class="secfont blockformat" tabindex="2" type="tel" name="cy" placeholder="1999">
           </div>
 
           <p class="article_font">Его оценка</p>
-          <div class="markfont">
-            <input class="star" tabindex="3" type="radio" name="mark1" value="1"> <span>1-Чудовищно</span>
-            <input tabindex="3" type="radio" name="mark1" value="2"> <span>2-Ужасно</span>
-            <input tabindex="3" type="radio" name="mark1" value="3"> <span>3-Очень плохо</span>
-            <input tabindex="3" type="radio" name="mark1" value="4"> <span>4-Плохо</span>
-            <input tabindex="3" checked type="radio" name="mark1" value="5"> <span>5-Средне или не досмотрел</span>
-            <input tabindex="3" type="radio" name="mark1" value="6"> <span>6-Один раз, не больше</span>
-            <input tabindex="3" type="radio" name="mark1" value="7"> <span>7-Хорошо</span>
-            <input tabindex="3" type="radio" name="mark1" value="8"> <span>8-Очень хорошо</span>
-            <input tabindex="3" type="radio" name="mark1" value="9"> <span>9-Шедевр</span>
-            <input tabindex="3" type="radio" name="mark1" value="10"> <span>10-Гениально</span>
-          </div>
+          <div class="radiogeneral">
+            <div class="markfont radiomark">
+                <input tabindex="3" id="radio-1" type="radio" name="mark1" value="1"> <span>1-Чудовищно</span><br>
+                <input tabindex="3" id="radio-2" type="radio" name="mark1" value="2"> <span>2-Ужасно</span><br>
+                <input tabindex="3" id="radio-3" type="radio" name="mark1" value="3"> <span>3-Очень плохо</span><br>
+                <input tabindex="3" id="radio-4" type="radio" name="mark1" value="4"> <span>4-Плохо</span><br>
+                <input tabindex="3" checked type="radio" id="radio-5" name="mark1" value="5"> <span>5-Средне / не досмотрел</span>
+            </div> 
+            <div class="markfont radiomark2">
+              <input tabindex="3" id="radio-6" type="radio" name="mark1" value="6"> <span>6-Один раз, не больше</span><br>
+              <input tabindex="3" id="radio-7" type="radio" name="mark1" value="7"> <span>7-Хорошо</span><br>
+              <input tabindex="3" id="radio-8" type="radio" name="mark1" value="8"> <span>8-Очень хорошо</span><br>
+              <input tabindex="3" id="radio-9" type="radio" name="mark1" value="9"> <span>9-Шедевр</span><br>
+              <input tabindex="3" id="radio-10" type="radio" name="mark1" value="10"> <span>10-Гениально</span><br>
+            </div>
+         </div> 
 
-          <div>
+          <div class="blockcenter markfont">
             <p class="article_font">Выберем еще любимых фильмов</p>
-            <input class="markfont" tabindex="4" type="checkbox" name="sho" value=""> <span>Побег из Шоушенка</span> 
-            <input class="markfont" tabindex="4" type="checkbox" checked name="matrix1" value=""><span>Матрица</span> 
-            <input class="markfont" tabindex="4" type="checkbox" name="hatef" value=""><span>Омерзительная восьмерка</span> 
+            <input tabindex="4" type="checkbox" name="sho" value=""> <span>Побег из Шоушенка</span><br>
+            <input tabindex="4" type="checkbox" checked name="matrix1" value=""><span>Матрица</span> <br>
+            <input tabindex="4" type="checkbox" name="hatef" value=""><span>Омерзительная восьмерка</span> <br>
           </div>
 
           <p class="article_font">Самый отвратательный фильм всех времен</p>
@@ -79,7 +81,7 @@
           </div>
 
         </form>
-        </div>
+      </div>
     </main>
 
 </body>
