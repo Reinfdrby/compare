@@ -1,6 +1,7 @@
 * {
-  font-family: 'Nunito', sans-serif;
-    padding: 0;
+  /*font-family: 'Nunito', sans-serif;*/
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  
+  padding: 0;
     margin: 0;
     border: 0;
 }
@@ -37,21 +38,40 @@ body {
 /*  H E A  D E R  */
 
 .header1 {
-  background-color: black;
-  height: 50px;
+  background-color: #1f1f1f;
+  height: 58px;
   width: 100%;
   top: 0px;
   left: 0px;
+  position: fixed;
   }
 
 .header2 {
-  display: block;
+  display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
+  max-width: fit-content;
   color: #ffffff;
-  margin-left: 30px
+  margin: 15px 20px;
 }
 
+.block1 {
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #252525;
+  width: 200px;
+  margin: 10px;
+}
+.block1 p {
+  color: #eb4a2e;
+  margin-top: 7px;
+  margin-left: 25px;
+}
+.block1 div {
+  color: white;
+  margin-left: 25px;
+}
 
 
 /*  B L O C K S  */
@@ -59,25 +79,28 @@ body {
 /*центральный блок-фон*/
 .top_block {
   background:rgba(255, 255, 255, 1);
-  margin: 0px 40px 0px 40px;
-  width: auto;
-  height: 60px;
+  margin: 0px 80px 0px 80px;
+  min-width: 530px;
+  max-width: 95%;
+  height: fit-content;
   padding: 5px;
 }
 
 /*блок с картинкой центрального фильма*/
 .trailer {
-  min-width: 900px;
-  height: 70px;
+  min-width: 500px;
+  max-width: 940px;
+  margin: 25px auto;
+  height: 300px;
   background: #000000;
-  border-radius: 3px;
+  border-radius: 5px;
+
 }
 
 /*тело блока с формой*/
 .center_block {
   background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url("im/triangles.png") center/cover no-repeat fixed;   
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
   padding: 15px;
   border-radius: 4px;
   min-width: 500px;
@@ -86,8 +109,7 @@ body {
 
 /*центрируем блок*/
 .blockcenter {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
   border: 1px dotted red;
 }
 
@@ -95,24 +117,24 @@ body {
 .radiomark {
   margin: 0px 15px 0px auto;
   display: inline-block;
-  width: 200px;
+  width: 180px;
   border: 3px dotted blue;
 }
 .radiomark2 {
   margin: 0px 0px 0px auto;
   display: inline-block;
-  width: 200px;
+  width: 180px;
   border: 3px dotted blue;
 }
 /*объединяющий их блок*/
 .radiogeneral {
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 410px;
+  margin: 0px auto;
+  min-width: fit-content;
   max-width: 50%;
   border: 3px dotted red;
 }
 
+/*блоки радио и чекбоксов*/
 .markfont input[type=radio] {
   cursor: pointer;
 	position: relative;
@@ -120,7 +142,7 @@ body {
 	padding-left: 25px;
 	margin-right: 0;
 	line-height: 18px;
-	user-select: none;
+  user-select: none;
 }
 .markfont input[type=radio]:before {
 	content: "";
@@ -165,8 +187,7 @@ body {
   max-width: 50%;
   min-width: 300px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto;
   padding: 5px;
   border-radius: 4px;
   box-shadow: 0px 0px 5px grey;
@@ -195,13 +216,15 @@ body {
   font-size: 12px!important;
 }
 
-.blockcenter input [type: checkbox]
-
 .secfont {
   font-size: 10px;
   font-weight: 200;
 }
 
+
+
+/*  I M A G E S  */
+.blockcenter input [type: checkbox]
 
 
 
