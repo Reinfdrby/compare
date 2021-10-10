@@ -4,6 +4,7 @@
   padding: 0;
     margin: 0;
     border: 0;
+    text-decoration: none;
 }
 
 html, body {
@@ -35,8 +36,9 @@ body {
     url("landscape.jpg") center/cover;*/
 }
 
-/*  H E A  D E R  */
+/*  H E A D E R  */
 
+/*общий блок*/
 .header1 {
   background-color: #1f1f1f;
   height: 58px;
@@ -45,23 +47,72 @@ body {
   left: 0px;
   position: fixed;
   }
-
+.header1-5 {
+  display: inline-block;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  max-width: fit-content;
+  color: #ffffff;
+  height: max-content;
+}
+/*обертка для блоков headera*/
 .header2 {
+  margin: 0px auto;
+  min-width: 1000px;
+}
+/*текстовые блоки*/
+.header3 {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
   max-width: fit-content;
   color: #ffffff;
-  margin: 15px 20px;
+  margin: 15px 15px;
+  height: max-content;
 }
-
+#menu {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin: 0px 15px;
+}
+/*меню при наведении*/
+#menu:hover {
+  background: #252525;
+  }
+.orange:hover {
+  color: #eb4a2e;
+}
+/*линии*/
+.hr1 {
+  width: 18px;
+  border-top: 2px solid white;
+  margin-bottom: 3px;
+  padding-top: 0,5em;
+}
+.hr2 {
+  width: 18px;
+  border-top: 2px solid white;
+  margin-bottom: 0px;
+  padding-top: 0,5em;
+}
+/*блок линий*/
+.linbl {
+  display: inline-block;
+  max-width: fit-content;
+  margin-top: 0px;
+  margin-left: 4px;
+}
+/*текстоые блоки меню*/
 .block1 {
+  position: relative;
   line-height: 25px;
   font-size: 14px;
   font-weight: 500;
   background-color: #252525;
   width: 200px;
-  margin: 10px;
+  margin: 0px 10px;
+  padding: 15px 0px;
 }
 .block1 p {
   color: #eb4a2e;
@@ -72,7 +123,14 @@ body {
   color: white;
   margin-left: 25px;
 }
-
+#series::before {
+  content: url('im/A.jpg');
+  background-image: url('im/A.jpg');
+  block-size: 15px;
+  margin-left: 5px;
+  display: inline-block;
+  border: 3px solid red;
+}
 
 /*  B L O C K S  */
 
@@ -94,7 +152,6 @@ body {
   height: 300px;
   background: #000000;
   border-radius: 5px;
-
 }
 
 /*тело блока с формой*/
@@ -221,6 +278,11 @@ body {
   font-weight: 200;
 }
 
+.menufont {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
 
 
 /*  I M A G E S  */
