@@ -8,8 +8,8 @@
 }
 
 main {
-  margin-left: 185px;
-}
+  margin: 0px auto;
+} 
 .gray {
   color: #a5a5a5;
 }
@@ -172,7 +172,8 @@ body {
 .now {
   background-color: #fff;
   margin: 0px 53px 0px 5px;
-  width: fit-content;
+  max-width: fit-content;
+  min-width: 990px;
   height: fit-content;
   padding: 25px;
   position: relative;
@@ -259,10 +260,11 @@ body {
 
 .choise {
   background-color: #fff;
-  margin: 25px 10px 0px 10px;
-  width: fit-content;
+  margin: 25px 5px 0px 5px;
   height: fit-content;
-  padding: 25px;
+  max-width: fit-content;
+  min-width: 990px;
+  padding: 25px 18px 0px 30px;
   position: relative;
   display: inline-block;
   font-size: 24px;
@@ -270,10 +272,11 @@ body {
 .choise1 {
   white-space: nowrap;
   display: inline-block;
-}
+  margin: 0px auto;}
 .choise2 {
-  width: 250px;
-  height: 250px;
+  width: 210px;
+  height: 210px;
+  margin-right: 12px;
   display: inline-block;
 }
 .next_results {
@@ -304,7 +307,7 @@ body {
 .trailer {
   width: 940px;
   margin: 30px auto;
-  height: 1300px;
+  height: 500px;
   background: #000000;
   border-radius: 5px;
 }
