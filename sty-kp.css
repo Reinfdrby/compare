@@ -10,6 +10,9 @@
 main {
   margin-left: 185px;
 }
+.gray {
+  color: #a5a5a5;
+}
 
 html, body {
   height: 100%;
@@ -61,6 +64,7 @@ body {
   position: relative;
   height: inherit;
   width: inherit;
+  white-space: nowrap;
 }
 .header1-5 {
   display: inline-block;
@@ -171,11 +175,41 @@ body {
   width: fit-content;
   height: fit-content;
   padding: 25px;
+  position: relative;
+  }
+.now-p1 {
+  display: inline-block;
+  margin-bottom: 24px;
+  margin-right: 5px;
+  font-size: 24px;
+}
+.now-p2 {
+  margin: 5px 0px;
+  font-size: 13px;
+}
+.now1 {
+  font-weight: 900;
+  word-break: break-all;
+}
+.now2 {
+  font-weight: 700;
+  display: inline;
+  word-break: break-all!important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+.arrow {
+  height: 35px;
+  position: absolute;
+  top: 20px;
 }
 .poster_all {
   position: relative;
   height: 140px;
   width: fit-content;
+  display: inline-block;
+  white-space: nowrap;
   margin: 0px auto;
   min-width: 500px;
   max-width: 940px;
@@ -189,8 +223,8 @@ body {
   margin: 0px auto;
 }
 .poster {
-  width: 130px;
-  height: 190px;
+  width: 140px;
+  height: 210px;
   border-radius: 4px;
   margin: 0px 15px 5px 0px;
   display: inline-block;
@@ -202,7 +236,7 @@ body {
   top: 5px;
   width: 27px;
   height: 18px;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: #3bb33b;
   display: inline-block;
 }
@@ -210,6 +244,49 @@ body {
   color: #c8c8c8;
   font-size: 13px;
   text-align: center;
+}
+.ticket {
+  position: absolute;
+  display: inline-block!important;
+  left: 108px;
+  top: 182px;
+  width: 23px;
+  height: 19px;
+  border-radius: 3px;
+  white-space: nowrap;
+  }
+
+
+.choise {
+  background-color: #fff;
+  margin: 25px 10px 0px 10px;
+  width: fit-content;
+  height: fit-content;
+  padding: 25px;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  }
+.choise1 {
+  white-space: nowrap;
+  display: inline-block;
+}
+.choise2 {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+}
+.next_results {
+  position: absolute;
+  }
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #c8c8c8;
+}
+.circle2 {
+
 }
 
 /*  B L O C K S  */
