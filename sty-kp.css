@@ -260,11 +260,11 @@ body {
 
 .choise {
   background-color: #fff;
-  margin: 25px 5px 0px 5px;
+  margin: 25px 5px 0px 0px;
   height: fit-content;
   max-width: fit-content;
   min-width: 990px;
-  padding: 25px 18px 0px 30px;
+  padding: 25px 0px 0px 0px;
   position: relative;
   display: inline-block;
   font-size: 24px;
@@ -274,8 +274,8 @@ body {
   display: inline-block;
   margin: 0px auto;}
 .choise2 {
-  width: 210px;
-  height: 210px;
+  width: 240px;
+  height: 240px;
   margin-right: 12px;
   display: inline-block;
 }
@@ -290,6 +290,57 @@ body {
 }
 .circle2 {
 
+}
+
+
+/* T R I P L E   S C R E E N */
+
+.info {
+  display: inline-block;
+  margin: 50px 0px;
+  
+}
+.info span {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.info-pic {
+  width: 100%;
+  border-radius: 4px;
+}
+.pop {
+  display: inline-block;
+  width: 21%;
+  vertical-align: top;
+  margin-right: 3%;
+}
+.today {
+  display: inline-block;
+  width: 51%;
+  vertical-align: top;
+  margin-right: 3%;
+}
+.new_video {
+  display: inline-block;
+  width: 21%;
+  vertical-align: top;
+}
+.today_video {
+  width: 100%;
+  border-radius: 4px;
+}
+.mews {
+  margin-bottom: 25px;
+}
+.pic-left {
+  display: inline-block;
+  width: 30%;
+}
+.text-right {
+  display: inline-block;  
+  width: 68%;
 }
 
 /*  B L O C K S  */
