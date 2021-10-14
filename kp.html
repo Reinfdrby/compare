@@ -2,38 +2,41 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> 
+    <meta name="description" content="Кинопоиск для никого, только для нас. Поиграем в декаданс">
+    <meta name='keywords' content="слова слова">
+    <meta name="robots" content="none">
     <title>My Kinopoisk</title>
     <link rel="stylesheet" href="sty-kp.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header1 borders">
-        <!--<div class="header2">-->
+    <header class="header1 ">
           <div class="header1-1">
-            <div class="header1-5 borders">
-                <div id="menu">
-                    <a class='menufont' href="https://www.kinopoisk.ru/" alt="kinopoisk"> КиноПоиск</a>
+            <div class="header1-5 ">
+                <div id="menu menufont1">
+                    <a class='menufont1' href="https://www.kinopoisk.ru/" alt="kinopoisk"> КиноПоиск</a>
                     <div class="linbl">
                         <hr class="hr1"><hr class="hr1"><hr class="hr2">
                     </div>
                </div>
             </div>
-            <div class="header3 borders">
+            <div class="header3">
                 <a class='menufont orange' href="https://www.hd.kinopoisk.ru/"> Онлайн-кинотеатр </a>
             </div>
-            <div class="header3 borders">
+            <div class="header3">
                 <a class='menufont orange series' id='series' href="https://www.hd.kinopoisk.ru/"> Сериалы на весь год </a>
             </div>
-            <div class="header3 borders search">
+            <div class="header3 search">
                 <form action="#" method="post" enctype="multipart/form-data">
                     <input type="text" name="search" value="" placeholder="Фильмы, сериалы, персоны">
                 </form>
             </div>
-            <div class="header3 borders">
+            <div class="header3">
                 <a class='menufont orange' href="https://www.hd.kinopoisk.ru/"> Войти </a>
             </div>
-            <div class="header3 borders plus">
+            <div class="header3 plus">
                 <a class='menufont orange' href="https://www.hd.kinopoisk.ru/"><img src="im/Plus2.jpg"/></a>
             </div>
           </div>
@@ -77,7 +80,7 @@
         <div class="trailer">
         </div>  
       
-      <div class="now">
+      <div class="now borders">
           <div>
               <p class="now1 now-p1">Смотрите в кино</p>
               <p class="gray now-p1">31</p>
@@ -202,8 +205,9 @@
                </div>
           </div>
           <div class="info">
-               <div class="pop">
-                  <p>Популярное</p>
+               <div class="pop borders">
+                  <span class=''> Популярное</span>
+                  <img class="info-pic" src="im/posters/fr5.jpg" alt="">
                   <div>
                       <p>1.Sci-fi-сериал «Основание»: почему он лучше «Дюны» (и литературного первоисточника) </p>
                       <p>2.История группы «Король и Шут» станет сериалом. Князь — продюсер, родственники Горшка одобряют</p>
@@ -213,50 +217,77 @@
                       <p>6.10 лучших трейлеров недели: Таргариены возвращаются, а Питер Динклэйдж играет поэта</p>
                       <p>7.Кэри Фукунага рассказал о кандидатах на роль Бонда</p>
                       <p>8.Что нового: телеканалы, плеер в Apple TV и удобная поддержка</p>
-                      <p>9.<b><i>Видео</i></b>Почему «Казино Рояль» — лучший фильм про Бонда</p>
+                      <p>9.<b><i>Видео </i></b>Почему «Казино Рояль» — лучший фильм про Бонда</p>
                       <p>10.Что происходит в прокате: «Дюна», «Дюна» и еще раз «Дюна» 95</p>
                   </div>
                </div>
-               <div class="today">
-                      <p>Главное сегодня</p>
-                      <img src="" alt="">
+               <div class="today borders">
+                      <span>Главное сегодня</span>
+                      <img class="info-pic" src="im/posters/fr6.jpg" alt="">
                       <p>Подкаст «Не время умирать»: затянутый боевичок или достойное прощание с Бондом Дэниэла Крэйга </p>
                       <hr>
-                      <div class="mews">
-                          <img src="" alt="">
-                          <p> Князев — Берлиоз, а Колокольников — Коровьев. Как выглядят герои «Воланда»</p>
+                      <div class="mews borders">
+                          <div class="pic-left borders">
+                            <img class="today_video" src="im/posters/fr9.jpg" alt="">
+                          </div>
+                          <div class="text-right borders">
+                            <p> Дружба с Шварценеггером, звонок Вайнштейна и успех на Netflix: как Александр Невский победил всех</p>
+                          </div>
                       </div>
-                      <div class="mews">
-                          <img src="" alt="">
-                          <p> Сергей Бондарчук, Алла Демидова, Алиса Фрейндлих и Бодров-мл.: 4 новых документальных фильма о легендах нашего кино</p>
-                        </div></p>
+                      <div class="mews borders">
+                          <div class="pic-left borders">
+                            <img class="today_video" src="im/posters/fr10.jpg" alt="">
+                          </div>
+                          <div class="text-right borders">
+                            <p> Минкульт поддержит 25 фильмов, включая драмеди с Дорном и постапокалипсис с Янковским. Рассказываем, о чем они</p>
+                          </div>
                       </div>
-                      <div class="mews">
-                        <img src="" alt="">
-                        <p>Видео. Почему «Казино Рояль» — лучший фильм про Бонда</p>
-                        <p>Культовое кино</p>
+                      <div class="mews borders">
+                         <div class="pic-left borders">
+                            <img class="today_video" src="im/posters/fr11.jpg" alt="">
+                         </div>
+                        <div class="text-right borders">
+                            <p>Режиссер скандальной «Герды» Наталья Кудряшова — о хейтерах, пьяных актерах и подводных съемках</p>
+                            <p>Наше кино</p>
+                        </div>
                     </div>
-                    <div class="mews">
-                      <img src="" alt="">
-                      <p>Что смотреть дома: 3-й сезон «Голяка», мини-сериал «Дюна», «Пингвины моей мамы»</p>
-                      <p>Выбор редакции</p>
+                    <div class="mews borders">
+                        <div class="pic-left borders">
+                            <img class="today_video" src="im/posters/fr12.jpg" alt="">
+                        </div>
+                        <div class="text-right borders">
+                           <p>«Игра в кальмара»: как кровавая история о неравенстве стала главным сериалом года</p>
+                            <p>Выбор редакции</p>
+                        </div>
                     </div>
                     <div> 
                       <p>Больше материалов</p>
                     </div>
               </div>
-              <div class="new_video">
-                    <p>Новые видео</p>
-                    <img src="" alt="">
-                    <p>Почему «Казино Рояль» — лучший фильм про Бонда</p>
-                    <img src="" alt="">
-                    <p>КиноПоиск запускает шоу «Докажи, если сможешь»! В первом выпуске рэпер GONE.Fludd сразился с клипмейкером Алиной Пязок</p>
-                    <img src="" alt="">
-                    <p>Почему «Клиника» не просто ситком</p>
-                    <img src="" alt="">
-                    <p>Как снимает Дени Вильнёв и чем хороша «Дюна»</p>
-                    <img src="" alt="">
-                    <p>Новый выпуск «Киноколеса»: Зоя Бербер вспоминает, как убегала с «Тихого места», а еще присуждает свой личный «Оскар»</p>
+              <div class="new_video borders">
+                    <div>
+                        <span>Новые видео</span>
+                    </div>    
+                    <div>
+                        <img class="info-pic" src="im/posters/fr7.jpg" alt="">
+                        <p>Почему «Казино Рояль» — лучший фильм про Бонда</p>
+                      </div>    
+                      <div>
+                        <img class="info-pic" src="im/posters/fr8.jpg" alt="">
+                        <p>КиноПоиск запускает шоу «Докажи, если сможешь»! В первом выпуске рэпер GONE.Fludd сразился с клипмейкером Алиной Пязок</p>
+                      </div>    
+                      <div>
+                        <img class="info-pic" src="im/posters/fr13.jpg" alt="">
+                        <p>Почему «Клиника» не просто ситком</p>
+                      </div>    
+                      <div>
+                        <img class="info-pic" src="im/posters/fr20.jpg" alt="">
+                        <p>Как снимает Дени Вильнёв и чем хороша «Дюна»</p>
+                      </div>    
+                      <div>
+                        <img class="info-pic" src="im/posters/fr14.jpg" alt="">
+                        <p>Новый выпуск «Киноколеса»: Зоя Бербер вспоминает, как убегала с «Тихого места», а еще присуждает свой личный «Оскар»</p>
+                      </div>
               </div>
           </div>
       </div>

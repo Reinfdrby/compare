@@ -43,12 +43,13 @@ body {
     url("landscape.jpg") center/cover;*/
 }
 
-/*  H E A D E R  */
 
 /*ВСЕМ БОРДЕРЫ*/
 .borders {
   border: 1px solid red;
 }
+
+/*  H E A D E R  */
 
 /*общий блок*/
 .header1 {
@@ -64,10 +65,12 @@ body {
   position: relative;
   height: inherit;
   width: inherit;
-  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  j
 }
 .header1-5 {
-  display: inline-block;
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
@@ -75,14 +78,9 @@ body {
   color: #ffffff;
   height: max-content;
 }
-/*обертка для блоков headera*/
-.header2 {
-  margin: 0px auto;
-  min-width: 1000px;
-}
+
 /*текстовые блоки*/
 .header3 {
-  display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 900;
   max-width: fit-content;
@@ -94,7 +92,6 @@ body {
 .search {
   background: #3e3e3e;
   height: 40px;
-  margin-top: 10px;
   border-radius: 5px;
 }
 #menu {
@@ -150,20 +147,17 @@ body {
 }
 .series {
   position: relative;
-  display: inline-block;
   margin-left: 30px;
 }
 .series::before {
   content: url("im/AA.jpg");
-  display: inline-block;
   position: absolute;
   left: -30px;
   top: -7px;
 }
 .plus {
-  display: inline-block;
   height: 40px;
-  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 
@@ -186,7 +180,7 @@ body {
 }
 .now-p2 {
   margin: 5px 0px;
-  font-size: 13px;
+  font-size:f 13px;
 }
 .now1 {
   font-weight: 900;
@@ -256,15 +250,18 @@ body {
   border-radius: 3px;
   white-space: nowrap;
   }
+.text {
+  text-align: left;
 
+}
 
 .choise {
   background-color: #fff;
-  margin: 25px 5px 0px 5px;
+  margin: 25px 5px 0px 0px;
   height: fit-content;
   max-width: fit-content;
   min-width: 990px;
-  padding: 25px 18px 0px 30px;
+  padding: 25px 0px 0px 0px;
   position: relative;
   display: inline-block;
   font-size: 24px;
@@ -274,8 +271,8 @@ body {
   display: inline-block;
   margin: 0px auto;}
 .choise2 {
-  width: 210px;
-  height: 210px;
+  width: 240px;
+  height: 240px;
   margin-right: 12px;
   display: inline-block;
 }
@@ -290,6 +287,63 @@ body {
 }
 .circle2 {
 
+}
+
+
+/* T R I P L E   S C R E E N */
+
+.info {
+  display: inline-block;
+  margin: 50px 0px;
+  
+}
+.info span {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.info-pic {
+  width: 100%;
+  border-radius: 4px;
+}
+.pop {
+  display: inline-block;
+  width: 21%;
+  vertical-align: top;
+  margin-right: 3%;
+}
+.today {
+  display: inline-block;
+  width: 51%;
+  vertical-align: top;
+  margin-right: 3%;
+}
+.new_video {
+  display: inline-block;
+  width: 21%;
+  vertical-align: top;
+}
+.today_video {
+  width: 100%;
+  border-radius: 4px;
+}
+.today p {
+  margin-bottom: 10px;
+}
+.mews {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+.pic-left {
+  display: inline-block;
+  width: 25%;
+}
+.text-right {
+  display: inline-block;  
+  width: 73%;
+  margin-left: 10px;
 }
 
 /*  B L O C K S  */
@@ -441,7 +495,11 @@ body {
   font-size: 15px;
   font-weight: 600;
 }
-
+.menufont1 {
+  color: white;
+  font-size: 19px;
+  font-weight: 800;
+}
 
 /*  I M A G E S  */
 .blockcenter input [type: checkbox]
