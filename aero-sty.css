@@ -1,0 +1,121 @@
+*{padding: 0; margin: 0; border: 0;}
+*,*:before,*:after{	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;	width: 100%; font-size: 100%; line-height: 1; font-size: 14px; 	-ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; 	-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+.bigred{font-size: 20px; color: red;}
+
+.border {
+    border: 1px solid red;
+}
+
+.wrapper {
+    background: #f5f6f8;
+    height: 100%;
+    width: 100%;
+}
+.hedder1 {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding: 15px 15px 15px 40px;
+}
+.head-left {
+    flex: 1 1 auto;
+    }
+.logo {
+    height: 68px;
+}
+.head-eng {
+    flex: 0 0 auto;
+    margin-left: 30px;
+}
+.logo2 {
+    height: 25px;
+}
+.head-ru {
+    flex: 0 0 auto;
+}
+.head-lens {
+    flex: 0 0 auto;
+}
+.head-speak {
+    flex: 0 0 auto;
+}
+.head-phone {
+    flex: 0 0 auto;
+}
+.main {
+}
+.left-menu {
+}
+.main-menu {
+}
+.autor {
+}
+.buy {
+}
+.price {
+}
+.mcd {
+}
+.bus {
+}
+.day {
+}
+.priv {
+}
+.info {
+}
+.how {
+}
+.callme {
+}
+.are {
+}
+.orange-info1 {
+}
+.sign1 {
+}
+.info1 {
+}
+.info2 {
+}
+.orange-info2 {
+}
+.orange-info1 {
+}
+.orange-info2 {
+}
+.lright-main {
+}
+.slider {
+}
+.tickets {
+}
+.services {
+}
+.news {
+}
+.companies {
+}
+.corp {
+}
+.smi {
+}
+.footer {
+}
+.logos {
+}
+.foottext {
+}
