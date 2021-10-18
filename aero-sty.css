@@ -15,26 +15,34 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .bigred{font-size: 20px; color: red;}
 
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
 .border {
+    border: 1px solid green;
+}
+.border2 {
     border: 1px solid red;
 }
 
 .wrapper {
     background: #f5f6f8;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
+    overflow: hidden;
 }
-.hedder1 {
+.headder1 {
     display: flex;
     align-items: center;
-    height: 70px;
-    padding: 15px 15px 15px 40px;
-}
+    height: 105px;
+    padding-left: 40px;
+    }
 .head-left {
     flex: 1 1 auto;
-    }
+}
 .logo {
-    height: 68px;
+    height: 70px;
 }
 .head-eng {
     flex: 0 0 auto;
@@ -55,51 +63,141 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 .head-phone {
     flex: 0 0 auto;
 }
+
+
+
 .main {
+    display: flex;
 }
 .left-menu {
+    flex: 0 0 auto;
+    width: 280px;
 }
 .main-menu {
+    justify-content: center;
+    align-items:flex-start;
+    background-color: #ff1300;
+    height: fit-content;
+    }
+.mm-general {
+    font-weight: 300;
+    font-size: 16px;
+    padding: 23px 25px 8px 43px;
+    color: white;
 }
 .autor {
+    background-image: url('im-aero/man.png'), url('im-aero/down.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 19px, 235px 20px;
 }
 .buy {
+    background: url(im-aero/info.png), url('im-aero/down.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 18px, 235px 20px;
 }
 .price {
+    background: url(im-aero/list.png), url('im-aero/right.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 18px, 235px 20px;
 }
 .mcd {
+    background: url(im-aero/info.png), url('im-aero/right.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 18px, 235px 20px;
 }
 .bus {
+    background: url(im-aero/info.png), url('im-aero/right.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 18px, 235px 20px;
 }
 .day {
+    background: url(im-aero/schedule.png), url('im-aero/right.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 18px, 235px 20px;
 }
 .priv {
+    background: url(im-aero/diamond.png), url('im-aero/right.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 20px, 235px 20px;
 }
 .info {
+    background: url(im-aero/info.png), url('im-aero/down.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 18px, 235px 20px;
 }
 .how {
+    background: url(im-aero/info.png), url('im-aero/down.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 18px, 235px 20px;
 }
 .callme {
+    background: url(im-aero/sp.png), url('im-aero/right.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 20px, 235px 20px;
 }
 .are {
+    background: url(im-aero/info.png), url('im-aero/right.png');
+    background-repeat: no-repeat;
+    background-size: 26px;
+    background-position: 12px 18px, 235px 20px;
+    margin-bottom: 23px;
+    padding: 23px 25px 20px 43px;
 }
 .orange-info1 {
+    background-color: #ff7700;
+    padding: 15px;
+    margin-bottom: 25px;
+    display: flex;
 }
 .sign1 {
+    height: 29px;
+    margin-right: 5px;
+    margin-top: -2px;
 }
 .info1 {
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    line-height: 22px;
+}
+.orange-info2 {
+    background-color: #ff7700;
+    padding: 15px;
+    display: flex;
+}
+.sign2 {
+    height: 29px;
+    margin-right: 5px;
+    margin-top: -2px;
 }
 .info2 {
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    line-height: 22px;
 }
-.orange-info2 {
-}
-.orange-info1 {
-}
-.orange-info2 {
-}
-.lright-main {
+
+
+
+
+
+.center {
+    flex: 1 1 auto;
+    padding: 0px 25px 50px 25px;
+    margin: 0px 25px;
 }
 .slider {
+    width: 100%;
 }
 .tickets {
 }
@@ -107,12 +205,36 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 .news {
 }
-.companies {
+.companies{
 }
-.corp {
+.corp{
 }
-.smi {
+.smi{
 }
+
+
+
+
+.right-main {
+    display: flex;
+    width: ;
+    align-items: center;
+    flex-direction: column;
+}
+.head-ru2 {
+
+}
+.head-lens2 {
+
+}
+.head-speak2 {
+
+}
+.head-phone2 {
+}
+
+
+
 .footer {
 }
 .logos {
