@@ -1,0 +1,45 @@
+.super-wrap {
+
+}
+.sub__wrap {
+    display: flex;
+    flex-direction: column  ;
+}
+.header {
+    flex: 0 0 auto;
+    background-color: maroon;
+}
+.main {
+    display: flex;
+    flex: 1 1 auto;
+}
+.lefcen_main_column {
+    background-color: red;
+    max-width: 66%;
+    padding: 10px;
+    display: flex;
+}
+.left_center_col {
+    background-color:blue;
+    max-width: 20%;
+}
+.center_center_col {
+    background-color: violet;
+    max-width: 50%;
+}
+.right_center_col {
+    background-color: yellow;
+    max-width: 20%;
+}
+.right_main_column {
+    background-color: green;
+    max-width: 33%;
+}
+.rmc__wraper {
+    background-color: magenta;
+    max-width: 100%; 
+}
+.footer {
+    flex: 0 0 auto;
+    background-color: goldenrod;
+}

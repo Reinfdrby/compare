@@ -71,13 +71,14 @@ body {
 /* центральный блок - контент */
 .main {
     display: flex;
-    align-items: flex-start;
 }
 
 /* контент - основа*/
-.left__center{
+.left__center {
+
+}
+.container {
     display: flex;
-    flex: 1 1 auto;
 }
 
 /* контент - основа - левый блок */
@@ -202,12 +203,12 @@ body {
 
 /* контент - основа - левый блок */
 .center__center {
-    flex: 1 1 200px;
+    flex: 1 1 auto;
     padding: 0px 25px 50px 25px;
     margin: 0px 0px;
 }
 .slider {
-    width: 100%;
+
 }
 .tickets {
 }
@@ -227,7 +228,7 @@ body {
 .right__center {
     display: flex;
     flex-direction: column;
-    flex: 10%;
+    flex: 0 0 10%;
     margin: -20px 0px;
     }
 .side-board-none {
@@ -261,6 +262,7 @@ body {
 
 }
 .head-phone2 {
+
 }
 
 
