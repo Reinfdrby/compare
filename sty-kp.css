@@ -1,4 +1,4 @@
-* {
+﻿* {
   /*font-family: 'Nunito', sans-serif;*/
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;  
   padding: 0;
@@ -49,6 +49,9 @@ body {
 .borders {
   border: 1px solid red;
 }
+.borders2 {
+  border: 1px solid yellow;
+}
 
 /*общий блок*/
 .header1 {
@@ -63,8 +66,15 @@ body {
 .header1-1 {
   position: relative;
   height: inherit;
+<<<<<<< HEAD
   width: inherit;
   white-space: nowrap;
+=======
+  min-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+>>>>>>> 230769f367398069224c84dbf754e147b884081d
 }
 .header1-5 {
   display: inline-block;
@@ -74,12 +84,16 @@ body {
   max-width: fit-content;
   color: #ffffff;
   height: max-content;
+  margin-right: 20px;
 }
+<<<<<<< HEAD
 /*обертка для блоков headera*/
 .header2 {
   margin: 0px auto;
   min-width: 1000px;
 }
+=======
+>>>>>>> 230769f367398069224c84dbf754e147b884081d
 /*текстовые блоки*/
 .header3 {
   display: inline-block;
@@ -92,11 +106,41 @@ body {
   }
 /*инпут для поиска*/
 .search {
+  display: inline-block;
   background: #3e3e3e;
   height: 40px;
   margin-top: 10px;
   border-radius: 5px;
+  padding: auto 5px;
+  width: 100%;
 }
+/*поисковая часть хэддера*/
+.search0 {
+  position: relative;
+  width: 25%;
+  margin: auto 20px;
+}
+.search1 {
+  display: flex;
+  flex-direction: row;
+}
+.search1-5 {
+  padding: auto 5px;
+  position:absolute;
+  top: 35%;
+  left: 10px;
+  color: #bdb8b874;
+  font-weight: 300;
+  font-size: 13px;
+}
+.search2 {
+  padding: auto 5px;
+  position: absolute;
+  height: 40%;
+  top: 30%;
+  right: 10px;
+}
+
 #menu {
   padding: 10px 20px;
   margin: 0px 15px;
