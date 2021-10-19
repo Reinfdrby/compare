@@ -26,13 +26,17 @@ body {
     border: 1px solid red;
 }
 
+
+
 .wrapper {
     background: #f5f6f8;
     min-height: 100%;
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
 }
-.headder1 {
+
+/* верхний блок - хэдер */
+.header1 {
     display: flex;
     align-items: center;
     height: 105px;
@@ -64,19 +68,22 @@ body {
     flex: 0 0 auto;
 }
 
-
+/* центральный блок - контент */
 .main {
     display: flex;
-    justify-content: flex-start;
+    align-items: flex-start;
 }
+
+/* контент - основа*/
 .left__center{
     display: flex;
-    flex: 1 1 90%;
+    flex: 1 1 auto;
 }
+
+/* контент - основа - левый блок */
 .left-menu {
-    flex: 0 0 auto;
-    width: 280px;
-}
+    flex: 0 0 280px;
+    }
 .main-menu {
     justify-content: center;
     align-items:flex-start;
@@ -193,12 +200,11 @@ body {
 
 
 
-
-
-.center {
-    flex: 1 1 auto;
+/* контент - основа - левый блок */
+.center__center {
+    flex: 1 1 200px;
     padding: 0px 25px 50px 25px;
-    margin: 0px 25px;
+    margin: 0px 0px;
 }
 .slider {
     width: 100%;
@@ -217,15 +223,31 @@ body {
 }
 
 
-
-.right__right {
-    position: fixed;
+/* контент - основа - праввый блок */
+.right__center {
     display: flex;
-    flex: 0 0 10%;
+    flex-direction: column;
+    flex: 10%;
+    margin: -20px 0px;
+    }
+.side-board-none {
+    height: 500px;
+}
+.side-board-1 {
+    padding: 15px 0px;
+}
+.side-board-2 {
+}
+
+
+
+/* центральный блок - правая навигационная панель */
+.right__right {
+    display: flex;
+    flex: 0 0 auto;
 }
 .right-main {
     display: flex;
-    width: ;
     align-items: center;
     flex-direction: column;
 }
@@ -242,7 +264,7 @@ body {
 }
 
 
-
+/* нижний блок - футер */
 .footer {
 }
 .logos {
