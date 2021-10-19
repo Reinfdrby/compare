@@ -37,7 +37,7 @@ body {
     align-items: center;
     height: 105px;
     padding-left: 40px;
-    }
+}
 .head-left {
     flex: 1 1 auto;
 }
@@ -65,9 +65,13 @@ body {
 }
 
 
-
 .main {
     display: flex;
+    justify-content: flex-start;
+}
+.left__center{
+    display: flex;
+    flex: 1 1 90%;
 }
 .left-menu {
     flex: 0 0 auto;
@@ -214,7 +218,11 @@ body {
 
 
 
-
+.right__right {
+    position: fixed;
+    display: flex;
+    flex: 0 0 10%;
+}
 .right-main {
     display: flex;
     width: ;
