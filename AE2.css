@@ -67,91 +67,99 @@ body {font-family: 'Exo 2', sans-serif;}
         justify-content: space-around;
     }
         .left_center_col {
-            background-color: #ff1300;
             width: 280px;
         }
         .main-menu {
             justify-content: center;
             align-items:flex-start;
             height: fit-content;
+            background-color: #ff1300;
+            margin-bottom: 23px;
         }
         .mm-general {
             font-weight: 300;
             font-size: 16px;
-            padding: 23px 25px 8px 46px;
+            padding: 16px 25px 12px 50px;
+            height: 50px;
             color: white;
+            display: inline-block;
+            width: 100%;
+        }
+        .mm-general:hover    {
+            background-color: #e11400;
+        }
+        .aaa {
+            display: block;
         }
         .autor {
-            background-image: url('im-aero/man.png'), url('im-aero/down.png');
+            background-image: url('im-aero/left-white-man.png'), url('im-aero/left-white-bottom.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 19px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 10px, 245px 17px;
         }
         .buy {
-            background: url(im-aero/info.png), url('im-aero/down.png');
+            background: url(im-aero/left-white-info.png), url('im-aero/left-white-bottom.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 18px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .price {
-            background: url(im-aero/list.png), url('im-aero/right.png');
+            background: url(im-aero/left-white-list.png), url('im-aero/left-white-right.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 18px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .mcd {
-            background: url(im-aero/info.png), url('im-aero/right.png');
+            background: url(im-aero/left-white-info.png), url('im-aero/left-white-right.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 18px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .bus {
-            background: url(im-aero/info.png), url('im-aero/right.png');
+            background: url(im-aero/left-white-info.png), url('im-aero/left-white-right.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 18px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .day {
-            background: url(im-aero/schedule.png), url('im-aero/right.png');
+            background: url(im-aero/left-white-schedule.png), url('im-aero/left-white-right.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 18px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .priv {
-            background: url(im-aero/diamond.png), url('im-aero/right.png');
+            background: url(im-aero/left-white-diamond.png), url('im-aero/left-white-right.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 20px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .info {
-            background: url(im-aero/info.png), url('im-aero/down.png');
+            background: url(im-aero/left-white-info.png), url('im-aero/left-white-bottom.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 18px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .how {
-            background: url(im-aero/info.png), url('im-aero/down.png');
+            background: url(im-aero/left-white-info.png), url('im-aero/left-white-bottom.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 18px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .callme {
-            background: url(im-aero/sp.png), url('im-aero/right.png');
+            background: url(im-aero/left-white-message.png), url('im-aero/left-white-right.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 20px, 235px 20px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .are {
-            background: url(im-aero/info.png), url('im-aero/right.png');
+            background: url(im-aero/left-white-info.png), url('im-aero/left-white-right.png');
             background-repeat: no-repeat;
-            background-size: 26px;
-            background-position: 12px 18px, 235px 20px;
-            margin-bottom: 23px;
-            padding: 23px 25px 20px 43px;
+            background-size: 26px, 16px;
+            background-position: 12px 12px, 245px 17px;
         }
         .orange-info1 {
             background-color: #ff7700;
-            padding: 15px;
+            padding: 15px 20px 15px 15px;
             margin-bottom: 25px;
             display: flex;
         }
@@ -168,7 +176,7 @@ body {font-family: 'Exo 2', sans-serif;}
         }
         .orange-info2 {
             background-color: #ff7700;
-            padding: 15px;
+            padding: 15px 20px 15px 15px;
             display: flex;
         }
         .sign2 {
@@ -205,11 +213,16 @@ body {font-family: 'Exo 2', sans-serif;}
                 justify-content: space-between;
             }
             .items_main {
-                width: 180px;
+                width: 200px;
                 height: 160px;
                 background-color: #8d97a2;
                 margin: 10px 5px;
                 border-radius: 0px 0px 20px 20px ;
+            }
+            .items_main:hover {
+                transition-duration: 1s;
+                transition-property: all;
+                tr
             }
             .frame__SVO {
                 text-align: right;
@@ -220,12 +233,28 @@ body {font-family: 'Exo 2', sans-serif;}
             .frame {
                 display: flex;
                 flex-direction: row;
+                justify-content: center;
+                height: 100px;
             }
             .frame__text {
-                flex: 0 0 70%;
+                flex: 0 0 65%;
+                color: white;
+                padding: 5px;
+            }
+            .frame__article{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .frame__price {
+                font-size: 24px;
+                font-weight: 700;
+                margin: 5px 0px;
+            }
+            .frame__howlong {
+                font-size: 11px;
             }
             .frame__picture {
-                flex: 0 0 30%;
+                flex: 0 0 35%;
                 display: inline-block;
                 width: 60px;
             }
@@ -248,6 +277,30 @@ body {font-family: 'Exo 2', sans-serif;}
             .center__item_2_7 {
             }
             .center__item_2_8 {
+            }
+
+            .form__goto {
+                padding: 22px;
+                display: flex;
+                justify-content: center;
+            }
+            .goto {
+                background-color: #e11400;
+                border-radius: 25px;
+                width: 250px;
+                height: 50px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                color: white;
+                font-weight: 700;
+                font-size: 22px;
+                box-shadow: 0px 5px 5px #3c354a;
+                transition: all 0.5s cubic-bezier(0.68,-0.55,0.265,1.55) 0ss;
+            }
+            .goto:hover {
+                padding: 0px 50px;
+                background-color: #ff7700;
+
             }
 
 
