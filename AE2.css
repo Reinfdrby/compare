@@ -28,7 +28,8 @@ body {font-family: 'Exo 2', sans-serif;}
     flex-direction: column;
     max-width: 100%;
     margin: 0px auto;
-    background: linear-gradient(top, #fbfbfc, #d8dce0);
+    background: linear-gradient(to bottom, #fbfbfb 0%, #f3f4f6 50%, #ced3d8 70%);
+    background-attachment:fixed;
     height: 100%;
 }
 
@@ -302,6 +303,57 @@ body {font-family: 'Exo 2', sans-serif;}
                 background-color: #ff7700;
 
             }
+        .center__item_3 {
+            margin-top: 30px;        
+        }
+        .center__item_3_article {
+            font-size: 26px;
+            font-weight: 300;
+            margin-bottom: 5px;
+            padding-left: 40px;
+        }
+        .center__item_3_row {
+            display: flex;
+            justify-content:space-between;
+            padding: 15px;
+        }
+        .center__item_3_row_1 {
+            flex: 0 0 32%;
+            background-color: white;
+            padding: 15PX;
+            display: flex;
+            flex-direction: column;
+        }
+            .center__item_3_row_1_1 {
+                flex: 0 0 90%;
+                background-color: white;
+                padding: 15PX;
+                display: flex;
+                flex-direction: column;
+            }
+                .center__item_3_row_image {
+                    max-width: 100%;
+                    display: inline-block;
+                    margin: 0px auto;
+                }
+                .center__item_3_row_art {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin: 20px 0px 0px 0px;
+                    color: rgb(100, 92, 92);
+                }
+                .center__item_3_row_text {
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    color: rgb(100, 92, 92);
+                    margin: 16px 0px 10px 0px;
+                }
+            .center__item_3_row_button {
+                width: 20px;
+                align-self: flex-end;
+                flex: 0 0 10%;
+            }
 
 
 
@@ -336,7 +388,14 @@ body {font-family: 'Exo 2', sans-serif;}
             .rmc__1__2 {
                 height: 43px;
                 display: inline-block;
-                margin-top: 20px;
+                margin: 20px 0px 0px 0px;
+                font-size: 17px;
+                color: gray;
+                text-align: center;
+            }
+            .rmc__1__3 {
+                height: 43px;
+                display: inline-block;
                 font-size: 17px;
                 color: gray;
                 text-align: center;
