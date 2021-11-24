@@ -96,25 +96,11 @@ body {font-family: 'Exo 2', sans-serif;}
             height: fit-content;
             background-color: #ff1300;
             margin-bottom: 23px;
-        }
-        .mm-general {
-            font-weight: 300;
-            font-size: 16px;
-            padding: 16px 25px 12px 50px;
-            height: 50px;
-            color: white;
-            display: inline-block;
-            width: 100%;
             position: relative;
-        }
-        .mm-general:hover    {
-            background-color: #e11400;
-            cursor: pointer;
         }
         .aaa {
             display: block;
         }
-
 
 
             .form__goto {
