@@ -1,102 +1,139 @@
 
-        .autor {
-            background-image: url('im-aero/left-white-man.png'), url('im-aero/left-white-bottom.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 10px, 245px 17px;
-            z-index: 10;
-        }
-        .buy {
-            background: url(im-aero/left-white-info.png), url('im-aero/left-white-bottom.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-            z-index: 2;
-        }
-        .price {
-            background: url(im-aero/left-white-list.png), url('im-aero/left-white-right.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-        }
-        .mcd {
-            background: url(im-aero/left-white-info.png), url('im-aero/left-white-right.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-        }
-        .bus {
-            background: url(im-aero/left-white-info.png), url('im-aero/left-white-right.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-        }
-        .day {
-            background: url(im-aero/left-white-schedule.png), url('im-aero/left-white-right.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-        }
-        .priv {
-            background: url(im-aero/left-white-diamond.png), url('im-aero/left-white-right.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-        }
-        .info {
-            background: url(im-aero/left-white-info.png), url('im-aero/left-white-bottom.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-        }
-        .how {
-            background: url(im-aero/left-white-info.png), url('im-aero/left-white-bottom.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-        }
-        .callme {
-            background: url(im-aero/left-white-message.png), url('im-aero/left-white-right.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-        }
-        .are {
-            background: url(im-aero/left-white-info.png), url('im-aero/left-white-right.png');
-            background-repeat: no-repeat;
-            background-size: 26px, 16px;
-            background-position: 12px 12px, 245px 17px;
-        }
-        .orange-info1 {
-            background-color: #ff7700;
-            padding: 15px 20px 15px 15px;
-            margin-bottom: 25px;
-            display: flex;
-        }
-        .sign1 {
-            height: 29px;
-            margin-right: 5px;
-            margin-top: -2px;
-        }
-        .info1 {
-            font-weight: 300;
-            font-size: 16px;
-            color: white;
-            line-height: 22px;
-        }
-        .orange-info2 {
-            background-color: #ff7700;
-            padding: 15px 20px 15px 15px;
-            display: flex;
-        }
-        .sign2 {
-            height: 29px;
-            margin-right: 5px;
-            margin-top: -2px;
-        }
-        .info2 {
-            font-weight: 300;
-            font-size: 16px;
-            color: white;
-            line-height: 22px;
-        }
+.autor {background: url('im-aero/left-white-man.png') 12px 10px/26px no-repeat;}
+.buy, .mcd, .bus, .info, .how, .are {background: url('im-aero/left-white-info.png') 12px 12px/26px no-repeat;}
+.price {background: url('im-aero/left-white-list.png') 12px 12px/26px no-repeat;}
+.day {background: url('im-aero/left-white-schedule.png') 12px 12px/26px no-repeat;}
+.priv {background: url('im-aero/left-white-diamond.png') 12px 12px/26px no-repeat;}
+.callme {background: url('im-aero/left-white-message.png') 12px 12px/26px no-repeat;}
+
+
+.orange-info1, .orange-info2 {
+    background-color: #ff7700;
+    padding: 15px 20px 15px 15px;
+    display: flex;
+}
+.orange-info1 {
+    margin-bottom: 25px;
+}
+.sign1, .sign2 {
+    height: 29px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+.info1, .info2 {
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    line-height: 22px;
+}
+
+
+.godown_block {
+    display: none;
+}
+.godown_block.boom {
+    display: block;
+    margin: 15px 0px 0px -50px;
+    top: 0px;
+    left: 0px;
+    height: fit-content;
+    width: 280px;
+    background-color: white;
+    color: rgb(89, 84, 84);
+    padding: 5px 10px 5px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    position: relative;
+}
+.godown_block.boom p::after {
+    content: " ";
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    height: 1px;
+    width: 250px;
+    background: rgb(196, 192, 192);
+}
+.godown_block.boom p::before {
+    content: " ";
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    height: 1px;
+    width: 250px;
+    background: rgb(196, 192, 192);
+}
+
+.mm-general {
+    font-weight: 300;
+    font-size: 16px;
+    padding: 16px 25px 12px 50px;
+    height: 50px;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border: 1px dotted black;
+}
+.mm-general:hover    {
+    background-color: #e11400;
+    cursor: pointer;
+}
+
+/* Делаем стрелки вверх и вниз */
+.buy::after, .autor::before, .info::after, .how::after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    right: 23px;
+    top: 23px;
+    background-color: rgb(233, 222, 222);
+    transition: all 300ms ease 0s;
+}
+.buy::before, .autor::after, .info::before, .how::before {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    right: 16px;
+    top: 23px;
+    background-color: rgb(233, 222, 222);
+    transition: all 300ms ease 0s;
+}
+.buy::after, .autor::before, .info::after, .how::after {
+    transform: rotate(40deg);
+}
+.buy::before, .autor::after, .info::before, .how::before {
+    transform: rotate(-40deg);
+}
+.buy.boom::after, .autor.boom::before, .info.boom::after, .how.boom::after  {
+    transform: rotate(140deg);
+}
+.buy.boom::before, .autor.boom::after, .info.boom::before, .how.boom::before {
+    transform: rotate(220deg);
+}
+
+
+/* Делаем стрелки вправо */
+.price::after, .mcd::after, .bus::after, .day::after, .priv::after, .callme::after, .are::after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    right: 19px;
+    top: 27px;
+    transform: rotate(-40deg);
+    background-color: rgb(233, 222, 222);
+}
+.price::before, .mcd::before, .bus::before, .day::before, .priv::before, .callme::before, .are::before {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    right: 19px;
+    top: 21px;
+    transform: rotate(40deg);
+    background-color: rgb(233, 222, 222);
+}
