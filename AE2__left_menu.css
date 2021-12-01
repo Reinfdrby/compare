@@ -1,4 +1,3 @@
-
 .autor {background: url('im-aero/left-white-man.png') 12px 10px/26px no-repeat;}
 .buy, .mcd, .bus, .info, .how, .are {background: url('im-aero/left-white-info.png') 12px 12px/26px no-repeat;}
 .price {background: url('im-aero/left-white-list.png') 12px 12px/26px no-repeat;}
@@ -7,13 +6,18 @@
 .callme {background: url('im-aero/left-white-message.png') 12px 12px/26px no-repeat;}
 
 
-.orange-info1, .orange-info2 {
+.orange-info {
     background-color: #ff7700;
+    opacity: 1;
     padding: 15px 20px 15px 15px;
     display: flex;
+    transition: all 500ms ease 0ms;
 }
-.orange-info1 {
+.orange-info__1 {
     margin-bottom: 25px;
+}
+.orange-info:hover {
+    opacity: 0.8;
 }
 .sign1, .sign2 {
     height: 29px;
@@ -26,25 +30,111 @@
     color: white;
     line-height: 22px;
 }
+.info1_red {
+    background-color: tomato;
+}
 
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+.left_btn, .left_btn2 {
+    border-radius: 5px;
+    background-color: #ff7700;
+    transition: all 300ms ease 0ms;
+}
+.left_btn {
+    width: 70%;
+    height: 40px;
+    margin: 40px auto 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.left_btn2 {
+    width: 25%;
+    height: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.left_btn2:hover {
+    box-shadow: 5px 5px 10px gray;
+    background-color: #d5690a;
+}
+.left_btn__go, .left_btn__go2 {
+    color: #ffff;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_btn__go {
+    font-size: 18px;
+}
+.left_btn__go2 {
+    font-size: 14px;
+}
+
+.left_btn__go::before {
+    content: ' ';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 1px;
+    width: 10px;
+    background-color: white;
+    z-index: 4;
+    animation: first-a 2000ms ease infinite;
+}
+.left_btn__go::after {
+    content: ' ';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 1px;
+    width: 10px;
+    background-color: white;
+    z-index: 4;
+    animation: first-b 2000ms ease infinite;
+}
+@keyframes first-a {
+    0% {left: 4%;}
+    50% {left: 7%;}
+    100% {left: 4%;}
+}
+@keyframes first-b {
+    0% {right: 4%;}
+    50% {right: 7%;}
+    100% {right: 4%;}
+}
+
+
+.left_btn:hover {
+    box-shadow: 5px 5px 10px gray;
+    background-color: #d5690a;
+    width: 73%;
+}
 
 .godown_block {
     display: none;
 }
 .godown_block.boom {
     display: block;
-    margin: 15px 0px 0px -50px;
+    position: relative;
     top: 0px;
     left: 0px;
     height: fit-content;
     width: 280px;
     background-color: white;
-    color: rgb(89, 84, 84);
     padding: 5px 10px 5px 20px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 40px;
-    position: relative;
+}
+.godown_block a, a:visited, a:active, a:hover, a:focus {
+    color: rgb(89, 84, 84);
 }
 .godown_block.boom p::after {
     content: " ";
@@ -74,7 +164,9 @@
     display: inline-block;
     width: 100%;
     position: relative;
-    border: 1px dotted black;
+}
+.mm-general a, a:active, a:hover, a:focus, a:visited {
+    color: white;
 }
 .mm-general:hover    {
     background-color: #e11400;
@@ -102,6 +194,15 @@
     background-color: rgb(233, 222, 222);
     transition: all 300ms ease 0s;
 }
+.buy::after, .buy::before {
+    animation: ar1 3s infinite ease;
+}
+@keyframes ar1 {
+    0% {top:18px}
+    50% {top:27px}
+    100% {top:18px}
+}
+
 .buy::after, .autor::before, .info::after, .how::after {
     transform: rotate(40deg);
 }
