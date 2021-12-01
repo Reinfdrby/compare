@@ -13,13 +13,14 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-.bigred{font-size: 20px; color: red;}
 
 
 body {font-family: 'Exo 2', sans-serif;}
 
 .border {border: 1px solid green;}
 .border2 {border: 1px solid red;}
+.bigred{font-size: 20px; color: red;}
+
 
 .super-wrap {
     overflow: hidden;
@@ -91,9 +92,8 @@ body {font-family: 'Exo 2', sans-serif;}
             width: 280px;
         }
         .main-menu {
-            justify-content: center;
             align-items:flex-start;
-            height: fit-content;
+            height: auto;
             background-color: #ff1300;
             margin-bottom: 23px;
             position: relative;
@@ -329,7 +329,11 @@ body {font-family: 'Exo 2', sans-serif;}
             .rmc__1__3:hover {
                 color: #e11400;
             }
-.footer {
+            .rmc__1__2 p, a, a:active, a:focus, a:visited {
+                color: gray;
+            }
+
+            .footer {
     height: 70px;
 }
 .foot__content {
