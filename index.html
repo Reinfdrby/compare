@@ -1,69 +1,500 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Сравнение цен</title>
-    <link rel="stylesheet" href="sty.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=1.0">
+    <title>AeroExpress</title>
+    <link rel="stylesheet" href="AE2.css" >
+    <link rel="stylesheet" href="AE2__left_menu.css">
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="AE2__items.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marmelad&family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="im-aero/favicon.png" type="image/png">
 </head>
 <body>
-    <header class="header1">
-        <a href="https://github.com/">
-            <img class="img1" src="im/gh.jpg" alt="gh">
-        </a>
-    </header>
+    <div class="super-wrap">
+        <div class="sub__wrap">
+            <div class="header">
+                <div class="header__content">
+                    <div class="head-left">
+                        <a href="https://aeroexpress.ru/" title = "На главную"><img class="logo " src="im-aero/logo1.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main__content">
+                    <div class="lefcen_main_column">
+                        
+<!--  БЛОК МЕНЮ  -->
+                        
+                        <div class="left_center_col">
+                            <div class="main-menu">
+                                <div class="mm-general autor">
+                                    <p>АВТОРИЗАЦИЯ</p>
+                                </div>
+                                <div class="mm-general buy">
+                                    <div>
+                                        <p>ПОКУПКА БИЛЕТА</p>
+                                    </div>
+                                </div>
+                                <div class="godown_block">
+                                    <p>Поезд АЭРОЭКСПРЕСС</p>
+                                    <a href="https://aeroexpress.ru/aero/busorder.html"> <p>Экспресс-автобус</p></a>  
+                                    <a href="https://aeroexpress.business/"> <p>Покупка билетов для ЮЛ</p></a>
+                                </div>
+                                <div class="mm-general price">
+                                    <p>ТАРИФЫ</p>
+                                </div>
+                                <a class="aaa mm-general mcd" href="https://odintsovo.aeroexpress.ru">
+                                    <p>АЭРОЭКСПРЕСС НА МЦД</p>
+                                </a>
+                                <a class="aaa mm-general bus" href="https://khovrino.aeroexpress.ru">
+                                    <p>ЭКСПРЕСС-АВТОБУС</p>
+                                </q>
+                                <a class="aaa mm-general day" href="https://aeroexpress.ru/bonus.html">
+                                    <p>РАСПИСАНИЕ</p>
+                                </a>
+                                <a  class="aaa mm-general priv">
+                                    <p>ПРИВИЛЕГИЯ</p>
+                                </a>
+                                <div class="mm-general info">
+                                    <p>ИНФОРМАЦИЯ</p>
+                                </div>
+                                <div id='howtobuy' class="mm-general how" >
+                                    <p>КАК ДОБРАТЬСЯ</p>
+                                </div>
+                                <div class="mm-general callme">
+                                    <p>ОБРАТНАЯ СВЯЗЬ</p>
+                                </div>
+                                <div class="mm-general are">
+                                    <p>АРЕНДАТОРАМ</p>
+                                </div>
+                            </div>
+                            <div class="left_btn">
+                                <div class="left_btn__go">
+                                    <p>Еще новости</p>
+                                </div>
+                            </div>
+                            <div class="buttons">
+                                <div class="left_btn2" id='btn1'>
+                                    <div class="left_btn__go2">
+                                        <p>INS</p>
+                                    </div>
+                                </div>
+                                <div class="left_btn2" id='btn2'>
+                                    <div class="left_btn__go2">
+                                        <p>DEL</p>
+                                    </div>
+                                </div>
+                                <div class="left_btn2" id='btn3'>
+                                    <div class="left_btn__go2">
+                                        <p>TRY</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orange-info orange-info__1">
+                                <div class="sign1">
+                                    <img class="sign1" src="im-aero/oran-attantion.png" alt="">
+                                </div>
+                                <div class="info1">
+                                    <p class='info1_1' id='toIns'>С 4 по 12 октября и 17 октября на направлении Домодедово поезда Аэроэкспресс отправляются с изменениями в расписании. Некоторые рейсы отменены</p>
+                                </div>
+                            </div>
+                            <div class="orange-info">
+                                <div class="sign2">
+                                    <img class="sign2" src="im-aero/oran-attantion.png" alt="turn">
+                                </div>
+                                <div class="info2">
+                                    <p>С 16 по 22 октября изменено расписание на направлении Шереметьево. Некоторые рейсы отменены. Уточнить информацию можно на сайте во вкладке Расписание, или по тел. 8-800-700-33-77.</p>
+                                </div>
+                             </div>
+                        </div>
 
-    <main>  
-        <div class="poezd">
-            <a href="kp.html">
-                <img class = "img1" src="im/kp.jpg" alt="Kinopoisk-for-me"     height: 25px;>
-            </a>
-            <br> </br>
-            <a href="gh.html">
-                <img class="img1" src="im/gh.jpg" alt="my github"     height: 35px;>
-            </a>
+<!--  ЦЕНТРАЛЬНЫЙ БЛОК  -->
+
+                        <div class="center_center_col">
+                            <div class="center__item_1">
+                                <div class="center__item_1_1">
+                                    <a href="https://aeroexpress.ru/promo-alfa" title="100% кэшбэк"><img class="slider" src="im-aero/banner-center1.png" alt=""></a>
+                                </div>
+                                <div class="center__item_1_2 center__item_3_article">
+                                    <span>Аэроэкспресс – удобный трансфер в аэропорты Москвы</span>
+                                </div>
+                                <div class="center__item_1_3">
+                                    <p>Комфортабельные экспресс-поезда и автобусы между аэропортами Шереметьево, Домодедово, Внуково и центром Москвы. Бронирование экскурсий, покупка авиабилетов, сервисы для путешественников по всему миру.</p>
+                                </div>
+                            </div>
+                            <div class="center__item_2">
+                                <div class="items_main">
+                                    <div class="frame__SVO">
+                                        <p>SVO,DME,VKO</p>
+                                    </div>
+                                    <div class="frame">
+                                        <div class="frame__text">
+                                            <p class="frame__article">Стандарт</p>
+                                            <p class="frame__price">399 руб.</p>
+                                        </div>
+                                        <div class="frame__picture">
+                                            <img class="frame__picture_1" src="im-aero/gray-man.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="frame__howlong"> 
+                                        <span>действителен 30 дней</span>
+                                    </div>   
+                                    <div class="hidden_block">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </div>
+                                    <div class="frame__buy">
+                                        <div class="frame__buy_text">
+                                            <P>КУПИТЬ</P>
+                                        </div>
+                                        <!--
+                                        <div class="frame_buy_down">
+                                            <img src="im-aero/down.png" alt="">
+                                        </div>-->
+                                        <div class="arrow__space">
+                                            <div class="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items_main">
+                                    <div class="frame__SVO">
+                                        <p>SVO,DME,VKO</p>
+                                    </div>
+                                    <div class="frame">
+                                        <div class="frame__text">
+                                            <p class="frame__article">Стандарт <br> туда-обратно</p>
+                                            <p class="frame__price">750 руб.</p>
+                                        </div>
+                                        <div class="frame__picture">
+                                            <img src="im-aero/gray-reverse.png" class="frame__picture_1"  alt="">
+                                        </div>
+                                    </div>
+                                    <div class="frame__howlong"> 
+                                        <span>действителен 30 дней</span>
+                                    </div>
+                                    <div class="frame__buy">
+                                        <div class="frame__buy_text">
+                                            <P>КУПИТЬ</P>
+                                        </div>
+                                        <div class="arrow__space">
+                                            <div class="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items_main">
+                                    <div class="frame__SVO">
+                                        <p>SVO,DME,VKO</p>
+                                    </div>
+                                    <div class="frame">
+                                        <div class="frame__text">
+                                            <p class="frame__article">Бизнес</p>
+                                            <p class="frame__price">800 руб.</p>
+                                        </div>
+                                        <div class="frame__picture">
+                                            <img class="frame__picture_1" src="im-aero/gray-man-tie.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="frame__howlong"> 
+                                        <span>действителен на выбранную дату</span>
+                                    </div>
+                                    <div class="frame__buy">
+                                        <div class="frame__buy_text">
+                                            <P>КУПИТЬ</P>
+                                        </div>
+                                        <div class="arrow__space">
+                                            <div class="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items_main">
+                                    <div class="frame__SVO">
+                                        <p>SVO,DME,VKO</p>
+                                    </div>
+                                    <div class="frame">
+                                        <div class="frame__text">
+                                            <p class="frame__article">Семейный<br> туда-обратно</p>
+                                            <p class="frame__price">1300 руб.</p>
+                                        </div>
+                                        <div class="frame__picture">
+                                            <img class="frame__picture_1" src="im-aero/gray-family.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="frame__howlong"> 
+                                        <span> действителен 30 дней</span>
+                                    </div>
+                                    <div class="frame__buy">
+                                        <div class="frame__buy_text">
+                                            <P>КУПИТЬ</P>
+                                        </div>
+                                        <div class="arrow__space">
+                                            <div class="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items_main">
+                                    <div class="frame__SVO">
+                                        <p>SVO</p>
+                                    </div>
+                                    <div class="frame">
+                                        <div class="frame__text">
+                                            <p class="small_text">Экспресс-автобус<br>Ховрино-<br>Шереметьево</p>
+                                            <p class="frame__price">199 руб.</p>
+                                           </div>
+                                        <div class="frame__picture">
+                                            <img class="frame__picture_1" src="im-aero/gray-bus.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="frame__howlong"> 
+                                        <span>действителен на выбранную дату</span>
+                                    </div>
+                                    <div class="frame__buy">
+                                        <div class="frame__buy_text">
+                                            <P>КУПИТЬ</P>
+                                        </div>
+                                        <div class="arrow__space">
+                                            <div class="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items_main red">
+                                    <div class="frame__SVO">
+                                        <p></p>
+                                    </div>
+                                    <div class="frame">
+                                        <div class="frame__text">
+                                            <p class="frame__article">Стандарт <br>100% кэшбэк</p>
+                                            <p class="frame__price"><s>399</s> 0 руб.</p>
+                                        </div>
+                                        <div class="frame__picture_2">
+                                            <img class="frame__picture_2-1" src="im-aero/left-white-diamond.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="frame__howlong"> 
+                                        <span> </span>
+                                    </div>
+                                    <div class="frame__buy">
+                                        <div class="frame__buy_text">
+                                            <P>КУПИТЬ</P>
+                                        </div>
+                                        <div class="arrow__space">
+                                            <div class="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items_main">
+                                    <div class="frame__SVO">
+                                        <p>DME</p>
+                                    </div>
+                                    <div class="frame">
+                                        <div class="frame__text">
+                                            <p class="frame__article">Подписка<br>на 15 поездок</p>
+                                            <p class="frame__price">1800 руб.</p>
+                                        </div>
+                                        <div class="frame__picture">
+                                            <img class="frame__picture_1" src="im-aero/grey-money.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="frame__howlong"> 
+                                        <span>действителен 30 дней</span>
+                                    </div>
+                                    <div class="frame__buy">
+                                        <div class="frame__buy_text">
+                                            <P>КУПИТЬ</P>
+                                        </div>
+                                        <div class="arrow__space">
+                                            <div class="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="items_main">
+                                    <div class="frame__SVO">
+                                        <p> </p>
+                                    </div>
+                                    <div class="frame">
+                                        <div class="frame__text">
+                                            <p class="frame__article">Дополнит-е<br>услуги</p>
+                                        </div>
+                                        <div class="frame__picture">
+                                            <img class="frame__picture_1" src="im-aero/grey-ok.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="frame__howlong"> 
+                                        <span> </span>
+                                    </div>
+                                    <div class="frame__buy">
+                                        <div class="frame__buy_text">
+                                            <P>КУПИТЬ</P>
+                                        </div>
+                                        <div class="arrow__space">
+                                            <div class="arrow"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form__goto">
+                                <form action="">
+                                    <button class="goto"  type="submit"> тарифы </button>
+                                </form>
+                            </div>
+                            <div class="center__item_3">
+                                <div class="center__item_3_article">
+                                    <p>Основные сервисы Аэроэкспресс</p>
+                                </div>
+                                <div class="center__item_3_row">
+                                    <div class="center__item_3_row_1">
+                                        <div class="center__item_3_row_1_1">
+                                            <div class="center__item_3_row_image_cont">
+                                                <img class="center__item_3_row_image" src="im-aero/white-many.png" alt="">
+                                            </div>
+                                            <div class="center__item_3_row_art">
+                                                <p>Корпоративным клиентам</p>
+                                            </div>
+                                            <div class="center__item_3_row_text">
+                                                <p>Специальный тариф для юридических лиц. Безналичная оплата</p>
+                                            </div>
+                                        </div>
+                                        <div class="center__item_3_row_button">
+                                            <img class="center__item_3_row_button" src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="center__item_3_row_1">
+                                        <div class="center__item_3_row_1_1">
+                                            <div class="center__item_3_row_image_cont">
+                                                <img class="center__item_3_row_image" src="im-aero/invalid.png" alt="">
+                                            </div>
+                                            <div class="center__item_3_row_art">
+                                                <p>Персональный помощник</p>
+                                            </div>
+                                            <div class="center__item_3_row_text ">
+                                                <p>Сервис для маломобильных пассажиров</p>
+                                            </div>
+                                        </div>
+                                        <div class="center__item_3_row_button">
+                                            <img class="center__item_3_row_button" src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="center__item_3_row_1">
+                                        <div class="center__item_3_row_1_1">
+                                            <div class="center__item_3_row_image_cont">
+                                                <img class="center__item_3_row_image" src="im-aero/white-present.png" alt="">
+                                            </div>
+                                            <div class="center__item_3_row_art">
+                                                <p>Аэроэкспресс ПРИВИЛЕГИЯ</p>
+                                            </div>
+                                            <div class="center__item_3_row_text">
+                                                <p>Накапливайте баллы за каждую поездку</p>
+                                            </div>
+                                        </div> 
+                                        <div class="center__item_3_row_button">
+                                            <img class="center__item_3_row_button" src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news">
+                                <div class="news_art center__item_3_article">
+                                    <span>Новости</span>
+                                </div>
+                                <div class="news_line">
+                                    <div class="news_line_column">
+                                        <div class="news_line_column_pic_1"> 
+                                        </div>
+                                        <div class="news_line_column_date news_text">
+                                            <span>12.11.2021</span>
+                                        </div>
+                                        <div class="news_line_column_text news_text">
+                                            <span>Меры безопасности в поездах, автобусах и терминалах "Аэроэкспресс"</span>
+                                        </div>
+                                        <div class="news_line_column_link">
+                                            <img src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_line_column">
+                                        <div class="news_line_column_pic_2">
+                                        </div>
+                                        <div class="news_line_column_date news_text">
+                                            <span>12.11.2021</span>
+                                        </div>
+                                        <div class="news_line_column_text news_text">
+                                            <span>"Аэроэкспресс" проводит подготовку к работе в зимний сезон</span>
+                                        </div>
+                                        <div class="news_line_column_link">
+                                            <img src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_line_column">
+                                        <div class="news_line_column_pic_3">
+                                        </div>
+                                        <div class="news_line_column_date news_text">
+                                            <span>12.11.2021</span>
+                                        </div>
+                                        <div class="news_line_column_text news_text">
+                                            <span>"Аэроэкспресс" информирует об изменениях в расписании на Шереметьевском направлении с 30 октября</span>
+                                        </div>
+                                        <div class="news_line_column_link">
+                                            <img src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+<!--  БЛОК БАННЕРОВ СПРАВА  -->
+
+                            <div class="right_center_col">
+                                <div class="side-board-none">
+                                </div>
+                                    <div class="side-board-1">
+                                        <a href="https://aeroexpress.ru/promo-alfa" title="100% кэшбэк"><img src="im-aero/r1.jpg" alt="Кэшбэк 100%"></a>
+                                    </div>
+                                    <div class="side-board-1">
+                                     <a href='https://aeroexpress.ru/avia/' title="Удобный поиск и бронирование авиабилетов"><img src="im-aero/r2.jpg" alt="">
+                                 </div>
+                            </div>
+                    </div>
+
+<!--  БЛОК КНОПОК СПРАВА  -->
+
+                    <div class="right_main_column">
+                        <div class="rmc__wraper">
+                            <div class="rmc__1">
+                                <img class="rmc__1__1 rmc__1" src="im-aero/r-phone.png" title="Позвоните нам!" alt="">
+                            </div>                           
+                            <div class="rmc__1">
+                                <a href="https://aeroexpress.ru/aero/feedback.html" title="Оставьте свое обращение"> <img class="rmc__1__1" src="im-aero/right-message-grey.png" alt=""></a>
+                            </div>
+                            <div class="rmc__1">
+                                <a href="https://aeroexpress.ru/ru/aero/search.html" title="Поиск по сайту"><img class="rmc__1__1" src="im-aero/right-loop-grey.png" alt=""></a>
+                            </div>
+                            <div class="rmc__1__2">
+                                <a href="https://aeroexpress.ru/aero.html" title="Переключиться на русский язык"><p class="rmc__1__2">РУС</p></a>
+                            </div> 
+                            <div class="rmc__1__3">
+                                <a href="https://aeroexpress.ru/en/aero.html" title="Turn to english"><p class="rmc__1__2">ENG</p></a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--  ФУТЕР  -->
+
+            <div class="footer">
+                <div class="footer__content">
+                    <div class="foot__content">
+                        <p>© «Аэроэкспресс», 2021. Комфортабельные поезда в аэропорты Внуково, Домодедово и Шереметьево с Киевского, Павелецкого, Белорусского и Савеловского вокзалов Москвы и станций МЦК.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        <div id='container'>
-            <form>
-                <p><b>SEARCH</b></p>
-
-                <label for="search_golbal"><b>Product</b></label>
-                <input type="text" id='in-main' class='in1-p in1 font2' name="search_golbal" placeholder="enter the name of the product " align="middle">
-
-                <label for="search_extra"><b>Clarification</b></label>
-                <input type="text" id="in-main" class='in-main in1-p in2 font2' name="search_extra" placeholder="clarification" align="middle">
-
-                <p> </p>
-
-                <input type="submit" id='in3' class='center2 font1' name="go_search" value='GO' alt='Погнали'>
-                </form>
-        </div>
-
-        <span class="tre">
-            <p class="first_p"><b>C</b>hange ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Second change ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>third change dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi quisquam sint explicabo ducimus ullam, hic molestias et, soluta cumque quaerat tempora itaque fugiat iste enim natus dolores ut nemo vel.</p>
-        </span>
-
-        <div>
-            <img src="ali.jpg" alt='ali' class="img11" width="15">
-        </div>
-
-    </main>
-
+    </div>
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <script src="up_and_down.js"></script>
+    <script src='try_Dima.js'></script>
 </body>
 </html>
