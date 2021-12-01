@@ -32,6 +32,7 @@
         flex-direction: column;
         overflow: hidden;
         }
+
     .items_main:hover {
         box-shadow: 5px 5px 10px rgba(131, 123, 123, 0.5), -5px 5px 10px rgba(131, 123, 123, 0.7);
         width: 202px;
@@ -89,6 +90,7 @@
     }
     .frame__picture {
         display: flex;
+        justify-content: center;
         align-items: center;
         flex: 0 0 35%;
     }
@@ -97,7 +99,7 @@
         width: 55px;
     }
     .frame__picture_2 {
-        margin-left: 3PXgit ;
+        margin: 0 7px 0 0;
         display: flex;
         align-items: center;
     }
@@ -112,6 +114,9 @@
         flex: 0 0 25%;
         display: flex;
         justify-content: space-between;
+    }
+    .frame__buy.boom {
+        margin: 20px 0px 0px 0px;
     }
     .frame__buy_text {
         color: white;
@@ -133,6 +138,14 @@
 
     .hidden_block{
         display: none;
+        transition: all 300ms ease 0ms;
+    }
+    .hidden_block.boom {
+        display: block;
+        height: 30px;
+        width: 100%;
+        background-color: #8d97a2;
+        padding: 5px;
     }
 
     .arrow__space {
@@ -163,12 +176,12 @@
         right: 26px;
         transform: rotate(40deg);
     }
-    .arrow.active::after, .arrow.active::before {
-        background-color: tomato;
+    .arrow.boom::after, .arrow.boom::before {
+        background-color: rgb(233, 222, 222);
     }
-    .arrow.active::after {
+    .arrow.boom::after {
         transform: rotate(40deg);
     }
-    .arrow.active::before {
+    .arrow.boom::before {
         transform: rotate(-40deg);
     }
