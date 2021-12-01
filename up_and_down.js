@@ -50,8 +50,17 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#btn3').click(function(my4) {
         document.body.querySelector('.orange-info').classList.toggle('example__1');
-    });
-    $('#btn3').click(function(my4) {
-       document.body.querySelector('.orange-info').nextElementSibling.classList.toggle('example__1');
+        document.body.querySelector('.orange-info').nextElementSibling.classList.toggle('example__1');
+        const turn = document.body.querySelectorAll('.info1, .info2');
+        for (a of turn) {
+            a.style.color = 'khaki';
+            a.style.marginRight = '3px'; /* имена классов с дефисами записываем в режиме camel */
+            a.style.marginRight = ''; /* сбрасываем значение этого атрибута */
+            a.style.cssText = `      
+                color = 'khaki';
+                marginRight = '4px';
+                text-transform: uppercase;
+            `
+            };
     });
 });
