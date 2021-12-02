@@ -1,14 +1,17 @@
 .center_center_col {
     max-width: 60%;
-
 }
-
+    @media (max-width: 767px) {
+        .center_center_col {
+            max-width: 100%;
+            }
+        }
     .slider {
         display: inline-block;
         width: 100%;
     }
     .center__item_1_2 {
-        margin-top: 40px;
+        margin: 40px 30px 0px 30px;
     }
     .center__item_1_3 {
         margin: 10px 30px;
@@ -16,6 +19,11 @@
         font-size: 18px;
         font-weight: 300;
     }
+        @media (max-width: 767px) {
+            .center__item_1_3 {
+                font-size: 14px;
+                }
+            }
     .center__item_2 {
         display: flex;
         flex-wrap: wrap;
