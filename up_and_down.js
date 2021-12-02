@@ -64,3 +64,27 @@ $(document).ready(function() {
             };
     });
 });
+
+
+
+/* ========== Делаем фильтрацию ============= */
+    $('.center_nav__items').click(function() {
+        const loto = document.body.querySelectorAll('.center_nav__items');
+        for (a of loto) {
+            a.classList.remove('active');
+        }
+        this.classList.add('active');
+        var i=$(this).data('filter');
+        if (i==2) {
+            $('.items_main__2').show();
+            $('.items_main__3, .items_main__4').hide();
+        } else if (i==3) {
+            $('.items_main__3').show();
+            $('.items_main__2, .items_main__4').hide();
+        } else if (i==4) {
+            $('.items_main__'+i).show();
+            $('.items_main__2, .items_main__3').hide();
+        } else {
+            $('.items_main__1, .items_main__2, .items_main__3, .items_main__4').show();
+        };
+    });
