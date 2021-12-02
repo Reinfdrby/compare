@@ -5,7 +5,20 @@
 .priv {background: url('im-aero/left-white-diamond.png') 12px 12px/26px no-repeat;}
 .callme {background: url('im-aero/left-white-message.png') 12px 12px/26px no-repeat;}
 
+@media (max-width: 767px) {
+    .are {
+        background: none;
+        }
+}
 
+.oranges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto 20px;
+    width: 100%;
+    gap: 15px;
+}
 .orange-info {
     background-color: #ff7700;
     opacity: 1;
@@ -13,9 +26,21 @@
     display: flex;
     transition: all 500ms ease 0ms;
 }
-.orange-info__1 {
-    margin-bottom: 25px;
-}
+
+    @media (max-width: 767px) {
+        .orange-info {
+            width: 48%;
+            padding: 10px 10px 10px 7px;
+        }
+        .buttons {
+            width: 70%;
+            margin: 0 auto 20px;
+        }
+        .left_btn {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
 .orange-info:hover {
     opacity: 0.8;
 }
@@ -30,6 +55,11 @@
     color: white;
     line-height: 22px;
 }
+@media (max-width: 767px) {
+    .info1, .info2 {
+        font-size: 13px;
+    }
+}
 .info1_red {
     background-color: tomato;
 }
@@ -37,6 +67,8 @@
 .buttons {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto 15px;
 }
 .left_btn, .left_btn2 {
     border-radius: 5px;
@@ -51,9 +83,9 @@
     cursor: pointer;
 }
 .left_btn2 {
-    width: 25%;
+    width: 28%;
     height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     cursor: pointer;
 }
 .left_btn2:hover {
@@ -133,6 +165,11 @@
     font-weight: 400;
     line-height: 40px;
 }
+@media (max-width: 767px) {
+    .godown_block.boom {
+        left: 25%;
+    }
+}
 .godown_block a, a:visited, a:active, a:hover, a:focus {
     color: rgb(89, 84, 84);
 }
@@ -158,13 +195,32 @@
 .mm-general {
     font-weight: 300;
     font-size: 16px;
-    padding: 16px 25px 12px 50px;
+    padding: 12px 25px 12px 50px;
     height: 50px;
+    background-color: #ff1300;
     color: white;
     display: inline-block;
+    flex: 1 1 100%;
     width: 100%;
     position: relative;
+    align-items: center;
+    display: flex;
 }
+    @media (max-width: 767px) {
+        .mm-general {
+            width: 48%;
+            flex: 1 1 48%;
+            margin: 1px;
+            }
+        .mm-general:last-child {
+            background-image: url('im-aero/left-white-info.png');
+            background-repeat: no-repeat;
+            background-position: 150px 12px;
+            background-size: 26px;
+            padding: 0px;
+            justify-content: center;
+            } 
+    }
 .mm-general a, a:active, a:hover, a:focus, a:visited {
     color: white;
 }
@@ -198,9 +254,9 @@
     animation: ar1 3s infinite ease;
 }
 @keyframes ar1 {
-    0% {top:18px}
-    50% {top:27px}
-    100% {top:18px}
+    0% {top:19px}
+    50% {top:28px}
+    100% {top:19px}
 }
 
 .buy::after, .autor::before, .info::after, .how::after {
