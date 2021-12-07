@@ -1,0 +1,177 @@
+.calc_container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.calc_choice {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 10px 50px;
+}
+
+.calc_choice__item {
+    font-weight: 700;
+    font-size: 22px;
+    color: rgba(104, 104, 104, 1);
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+}
+.calc_choice__item.boom {
+    color: rgba(214, 58, 58, 1);
+    text-decoration: underline; 
+}
+
+.calc_choice__item:first-child::after,
+.calc_choice__item:last-child::after {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 16px;
+    height: 25px;
+    background: url('calc/lightning.png') no-repeat;
+} 
+
+.ticket_and_options {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 50px;
+}
+
+/* ========= ОБЩИЙ ДЛЯ ВЫБОРА ОПЦИЙ ============ */
+.ticket_and_options__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 30%;
+}
+.ticket_and_options__item.promo {
+
+}
+.ticket_and_options__item.passengers {
+    margin: 0 40px 0 0;
+    position: relative;
+}
+/* ========= БЛОК АКЦИЙ И ПАССАЖИРОВ ============ */
+.promo__title {
+    flex: 0 0 auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+.promo__choice-block {
+    flex: 1 1 70%;
+    border-radius: 17px;
+/* background-color: #F5E9E9;*/
+/* background: linear-gradient(to top left, #B588F7, #1DE5E2);*/
+    background: linear-gradient(to top left, #8778C7 0%, #ABF8E7 100%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2),
+    -23px 0 20px -23px rgba(0, 0, 0, .2),
+    23px 0 20px -23px rgba(0, 0, 0, .2),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+    width: 70px;
+    height: 126px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-evenly;
+    align-items: center;
+}
+.promo__choice-block-items {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.pass {
+    padding: 0 0 0 10px;
+    color: #B3A5A5;
+}
+.promo__choice-block-items span {
+    font-size: 33px;
+    font-weight: 700;
+    display: inline-flex;
+    width: 30px;
+    padding-right: 20px;
+}
+.non-active {
+}
+.promo__discount {
+}
+.discount {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #46DF83;
+    font-style: italic;
+    border-radius: 17px;
+    padding: 3px 5px;
+}
+.promo__discount__before_5 {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    text-align: center;
+}
+
+
+/* ========= БЛОК БИЛЕТА  - РЕЗУЛЬТАТ ВЫБОРА ============ */
+.ticket_and_options__ticket {
+    flex: 1 1 40%;
+    background: linear-gradient(to top left, #5C27FE, #C165DD);
+    /* background: url('calc/ticket.png') 50% 50% no-repeat; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 173px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+}
+
+.ticket_and_options__ticket__article {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffff;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+.ticket_and_options__ticket__price {
+    font-size: 55px;
+    font-weight: 800;
+    color: #ffff;
+    text-shadow: 1px 1px 2px black
+}
+.ticket_and_options__ticket__discount {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.ticket_and_options__ticket__discount__old-item {
+    font-weight: 700;
+    font-size: 18px;
+    width: 66px;
+    height: 35px;    
+    border-radius: 17px;
+    padding: 7px;
+}
+.one-price {
+    background-color: rgba(199, 34, 34, 1);
+    color: white;
+    text-decoration: line-through;
+    transform: rotate(-10deg);
+}
+.ticket_and_options__ticket__discount__old-item.discont {
+    font-style: italic;
+    background-color: #46DF83;
+    transform: rotate(-10deg);
+}
+/* ====================================================== */
