@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="AE2__left_menu.css">
     <link rel="stylesheet" href="example.css">
     <link rel="stylesheet" href="AE2__items.css">
+    <link rel="stylesheet" href="calc.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -503,6 +504,78 @@
 
 <!--  ФУТЕР  -->
 
+                <!--  БЛОК КАЛЬКУЛЯТОРА ТАРИФОВ  -->
+            <div class="calc_container">    <!--  обертка калькулятора  -->
+                <div class="calc_choice">   <!--  строка выбора типа перевозки - ЖД/автобус  -->
+                    <span class="calc_choice__item">Автобус -50%</span>
+                    <span class="calc_choice__item boom">Аэроэкспресс</span>
+                    <span class="calc_choice__item">Подписка от 60₽</span>
+                </div>
+                <div class="ticket_and_options">    <!--  основной блок с билетом и опциями акций и пассажиров  -->
+                    <div class="ticket_and_options__item promo"> <!--  блок выбора акций  -->
+                        <div class="promo__title">
+                            <span>Акции</span>
+                        </div>
+                        <div class="promo__choice-block">
+                            <div class="promo__choice-block-items">
+                                <img src="calc/alpha.png" alt="">
+                            </div>
+                            <div class="promo__choice-block-items">
+                                <img src="calc/alpha.png" alt="">
+                            </div>
+                        </div>
+                        <div class="promo__discount discount">
+                            <span>-12</span>
+                            <span>%</span>
+                        </div>
+                    </div>
+                    <div class="ticket_and_options__ticket"> <!--  билет с результатами выбора  -->
+                        <div class="ticket_and_options__ticket__article"> <!--  наименование билета  -->
+                            <span>БИЛЕТ </span>
+                            <span>“СТАНДАРТ”</span>
+                        </div>
+                        <div class="ticket_and_options__ticket__price"> <!--  цена билета  -->
+                            <span class="total_price">399</span>
+                            <span> ₽</span>
+                        </div>
+                        <div class="ticket_and_options__ticket__discount"> <!--  линия с результатами скидок  -->
+                            <div class="ticket_and_options__ticket__discount__old-item one-price">
+                                <span>450</span>
+                                <span> ₽</span>
+                            </div>
+                            <div class="ticket_and_options__ticket__discount__decor">
+                                <img src="calc/lightning.png" alt="">
+                            </div>
+                            <div class="ticket_and_options__ticket__discount__old-item discont">
+                                <span>-20</span>
+                                <span> %</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ticket_and_options__item passengers">
+                        <div class="promo__title">
+                            <span>Пассажиры</span>
+                        </div>
+                        <div class="promo__choice-block">
+                            <div class="promo__choice-block-items">
+                                <img src="calc/man.png" alt="">
+                                <span>2</span>
+                            </div>
+                            <div class="promo__choice-block-items">
+                                <img src="calc/child B.png" alt="">
+                                <span class="pass">0</span>
+                            </div>
+                        </div>
+                        <div class="promo__discount discount">
+                            <span>-20</span>
+                            <span>%</span>
+                        </div>
+                        <div class="promo__discount__before_5">
+                            <span>до 5 лет - бесплатно</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="footer">
                 <div class="footer__content">
                     <div class="foot__content">
