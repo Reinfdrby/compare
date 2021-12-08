@@ -29,6 +29,7 @@ body {font-family: 'Exo 2', sans-serif;}
     max-width: 100%;
     }
 .sub__wrap {
+    display: flex;
     flex-direction: column;
     margin: 0px auto;
     background-attachment:fixed;
@@ -65,13 +66,26 @@ body {font-family: 'Exo 2', sans-serif;}
 .header {   
     height: 100%;
 }
+ /*   @media (max-width: 992px) {
+        .header, .header__content, .head-left, img.logo {
+            display: none;
+    }
+    @media (max-width: 2000px) {
+        .header, .header__content, .head-left, img.logo {
+            display: block;
+    }
+*/
+
 .header__content{
+    display: block;
     align-items: center;
     height: 105px;
     padding: 15px 40px;
+    
 }
 .logo {
     height: 70px;
+    display: block
 }
 
 
@@ -82,24 +96,70 @@ body {font-family: 'Exo 2', sans-serif;}
     display: flex;
     max-width: 100%;
 }
+    @media (max-width: 767px) {
+        .main__content {
+            display: block;
+            }
+        }
     .lefcen_main_column {
         flex: 0 0 90%;
         padding: 10px;
         display: flex;
-        justify-content: space-around;
-    }
-        .left_center_col {
-            width: 280px;
+        justify-content: center;
+        gap: 7px;
         }
+        @media (max-width: 767px) {
+            .lefcen_main_column {
+                display: block;
+                }
+            }
+        .left_center_col {
+            min-width: 280px;
+            max-width: 320px;
+        }
+        @media (max-width: 767px) {
+            .left_center_col {
+                min-width: 480px;
+                width: 100%;
+                margin: 0 auto;
+                }
+            }
         .main-menu {
-            align-items:flex-start;
             height: auto;
-            background-color: #ff1300;
             margin-bottom: 23px;
             position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
+            @media (max-width: 767px) {
+                .main-menu {
+                    align-items:flex-start;
+                    justify-content: space-between;
+                    }
+                }
         .aaa {
             display: block;
+        }
+        .center_nav__container {
+            width: 70%;
+            margin: 2.2rem auto 1rem;
+            display: flex;
+            justify-content: center;
+            align-items:baseline;
+            cursor: pointer;
+        }
+        .center_nav__items {
+            margin-left: 1.5rem;
+        }
+        .center_nav__items.active {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #ff1300;
+
+        }
+        .center_nav__items:first-child {
+            margin-left: 0;
         }
 
 
@@ -128,19 +188,21 @@ body {font-family: 'Exo 2', sans-serif;}
                 transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
 
             }
-        .center__item_3 {
-            margin-top: 30px;        
-        }
+
         .center__item_3_article {
             font-size: 26px;
             font-weight: 300;
-            margin-bottom: 5px;
-            padding-left: 30px;
+            margin: 30px 0px 15px 30px;
         }
+        @media (max-width: 767px) {
+            .center__item_3_article {
+                font-size: 20px;
+                }
+            }
         .center__item_3_row {
             display: flex;
             justify-content: space-between;
-            padding: 15px;
+            padding: 0px 15px 15px 15px;
         }
         .center__item_3_row_1 {
             flex: 0 0 31.33%;
@@ -202,11 +264,7 @@ body {font-family: 'Exo 2', sans-serif;}
                 flex: 0 0 10%;
                 padding-top: 3px;
             }
-        
-
-        .news_art {
-            margin: 25px 0 15px 0;
-        }    
+  
         .news_line {
             display: flex;
             justify-content: space-between;
@@ -274,6 +332,11 @@ body {font-family: 'Exo 2', sans-serif;}
             max-width: 20%;
             min-width: 15%;
         }
+            @media (max-width: 767px) {
+                .right_center_col {
+                    display: none;
+                    }
+                }
             .side-board-none {
                 height: 370px;
             }
@@ -290,6 +353,12 @@ body {font-family: 'Exo 2', sans-serif;}
     .right_main_column {
         flex: 0 0 10%;
 }
+        @media (max-width: 767px) {
+            .right_main_column {
+                flex: 0%;
+                display: none;
+                }
+            }
         .rmc__wraper {
             max-width: 100%; 
             display: flex;
