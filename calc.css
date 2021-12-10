@@ -1,12 +1,23 @@
 .calc_container {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 40px auto 70px auto;
+
+}
+.calc_container_another_wrap {
+    display: none;
+    position:absolute;
+    min-width: 100%;
+    min-height: 5000px;
+    background: rgb(145, 135, 145);
+    z-index: 10;
+    top: 0;
+    left: 0;
 }
 
 .calc_choice {
     display: flex;
     justify-content: space-evenly;
-    margin: 60px 10px 50px;
+    margin: 20px 10px 50px;
 }
 
 .calc_choice__item {
@@ -16,6 +27,7 @@
     padding: 0 25px;
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 .calc_choice__item.boom {
     color: rgba(214, 58, 58, 1);
@@ -26,20 +38,24 @@
 .calc_choice__item:last-child::after {
     content: " ";
     position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 16px;
-    height: 25px;
+    top: -5px;
+    left: -12px;
+    width: 30px;
+    height: 35px;
     background: url('calc/lightning.png') no-repeat;
 } 
 
-.ticket_and_options {
-    display: flex;
-    justify-content: space-between; 
-    margin-bottom: 50px;
-}
 
 /* ========= ОБЩИЙ ДЛЯ ВЫБОРА ОПЦИЙ ============ */
+
+.ticket_and_options {
+    display: flex;
+    justify-content: space-around; 
+    margin: 0 auto 40px auto;
+    width: 75%;
+    min-width: 600px;
+}
+
 .ticket_and_options__item {
     display: flex;
     flex-direction: column;
@@ -51,9 +67,11 @@
 
 }
 .ticket_and_options__item.passengers {
-    margin: 0 40px 0 0;
     position: relative;
+    display: flex;
 }
+
+
 /* ========= БЛОК АКЦИЙ И ПАССАЖИРОВ ============ */
 .promo__title {
     flex: 0 0 auto;
@@ -77,64 +95,142 @@
     flex-direction: column;
     justify-content:  space-evenly;
     align-items: center;
+    cursor: pointer;
 }
+
 .promo__choice-block-items {
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
+.promo__choice-block-items img {
+    width: 44px;
+    height: 44px;
+}
 .pass {
-    padding: 0 0 0 10px;
-    color: #B3A5A5;
+    display: inline-flex;
 }
 .promo__choice-block-items span {
     font-size: 33px;
     font-weight: 700;
     display: inline-flex;
-    width: 30px;
-    padding-right: 20px;
+    padding: 0 10px 0 0;
+}
+.child-im {
+    display: inline-flex;
+    padding: 0 10px 0 11px;
+    height: 30px!important;
 }
 .non-active {
-}
-.promo__discount {
 }
 .discount {
     font-size: 18px;
     font-weight: 700;
     font-style: italic;
     background-color: #46DF83;
-    font-style: italic;
     border-radius: 17px;
     padding: 3px 5px;
+    position: relative;
 }
 .promo__discount__before_5 {
     position: absolute;
-    bottom: -40px;
-    left: 0;
+    bottom: -30px;
+    left: 0px;
+    width: 70px;
     text-align: center;
+    font-weight: 300;
+    font-size: 13px;
+    font-style: normal;
 }
 
 
 /* ========= БЛОК БИЛЕТА  - РЕЗУЛЬТАТ ВЫБОРА ============ */
 .ticket_and_options__ticket {
-    flex: 1 1 40%;
-    background: linear-gradient(to top left, #5C27FE, #C165DD);
-    /* background: url('calc/ticket.png') 50% 50% no-repeat; */
+    flex: 1 1 70%;
     display: flex;
+}
+.ticket_and_options__ticket_1, .ticket_and_options__ticket_2 {
+    background: linear-gradient(to top left, #5C27FE, #C165DD);
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 173px;
+    height: 200px;
     width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
+    max-width: 400px;
+    margin: 0 auto 0 50px;
     padding: 15px;
     border-radius: 25px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
     -23px 0 20px -23px rgba(0, 0, 0, .8),
     23px 0 20px -23px rgba(0, 0, 0, .8),
     0 0 40px rgba(0, 0, 0, .1) inset;
+    transition: all 1s ease 0s;
+    z-index: 20;
+    cursor: pointer;
 }
+.ticket_and_options__ticket_1 {
+    display: flex;
+}
+.ticket_and_options__ticket_2 {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px 0 5px 0;
+    align-items: center;
+    z-index: 20;
+}
+
+.ticket_and_options__ticket_1:hover, .ticket_and_options__ticket_2:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 1),
+    -30px 0 30px -23px rgba(0, 0, 0, .8),
+    30px 0 30px -23px rgba(0, 0, 0, .8),
+    0 0 50px rgba(0, 0, 0, .1) inset;
+}
+.article2 {
+    letter-spacing: 2px;
+    display: inline-flex;
+    position: relative;
+}
+.article2::after,
+.article2::before {
+    content: ' ';
+    position: absolute;
+    height: 2px;
+    background-color: #FBB11C;
+    width: 30px;
+    top: 10px;
+}
+.article2::after {
+    left: -40px;
+}
+.article2::before {
+    right: -40px;
+}
+.passangers__go_man {
+    margin-bottom: 15px;
+}
+.passangers__go_man, .passangers__go_chil {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+.passangers__go_man img {
+    width: 50px;
+}
+.passangers__go_chil img {
+    width: 30px;
+    margin-right: 15px;
+}
+.passangers__go_chil img:last-child {
+    margin-right: 0px;
+}
+.passangers__go_note p {
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+}
+
+
 
 .ticket_and_options__ticket__article {
     font-size: 20px;
@@ -142,12 +238,27 @@
     color: #ffff;
     text-shadow: 1px 1px 1px black;
     text-align: center;
+    padding: 0 30px;
 }
 .ticket_and_options__ticket__price {
     font-size: 55px;
     font-weight: 800;
+    letter-spacing: 2px;
     color: #ffff;
     text-shadow: 1px 1px 2px black
+}
+.standart, 
+.business-t, 
+.ex-bus, 
+.subs30 {
+    display: inline-flex;
+}
+
+.standart-none, 
+.business-t-none, 
+.ex-bus-none, 
+.subs30-none {
+    display: none;
 }
 .ticket_and_options__ticket__discount {
     display: flex;
@@ -174,4 +285,139 @@
     background-color: #46DF83;
     transform: rotate(-10deg);
 }
+/* ====================== ОПЦИИ  ========================= */
+
+.ticket_and_options__options.yes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    width: 70%;
+    margin: 0 auto;
+    gap: 50px;
+}
+.ticket_and_options__options.no {
+    display: none;
+}
+.ticket_and_options__options_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.options_1 {
+    background: linear-gradient(to top left, #8778C7 0%, #ABF8E7 100%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2),
+    -23px 0 20px -23px rgba(0, 0, 0, .2),
+    23px 0 20px -23px rgba(0, 0, 0, .2),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+    height: 65px;
+    width: 260px;
+    margin: 5px 0;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    border-radius: 17px;
+    position: relative;
+}
+.t_o__prefix {
+    position: absolute;   
+    top: -20px;
+    left: 30%;
+}
+.options_1 img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: all 300ms linear 0s;
+}
+.options_1 img:hover {
+    
+}
+
+.options_1__business_opt img, .image1 {
+    height: 68px;
+    width: 68px;
+}
+
+.options_1__business_opt {
+    background: linear-gradient(to top left, #8778C7 0%, #ABF8E7 100%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2),
+    -23px 0 20px -23px rgba(0, 0, 0, .2),
+    23px 0 20px -23px rgba(0, 0, 0, .2),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+    height: 80px;
+    width: 100px;
+    margin: 5px 0;
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    border-radius: 17px;
+    position: relative;
+}
+.boom_image1 {
+    display: inherit;
+    cursor: pointer;
+}
+.reboom_image1{
+    display: none;
+    cursor: pointer;
+}
+
+.boom_image3, .boom_image4, .boom_image5 {
+    display: inherit;
+    cursor: pointer;
+}
+.reboom_image3, .reboom_image4, .reboom_image5 {
+    display: none;
+    cursor: pointer;
+}
+.options_1__text.business span {
+    width: 100%;
+    margin-top: 6px ;
+}
+.options_1__text.sale span {
+    width: 100%;
+}
+.options_1__text {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 7px;
+    gap: 6px;
+}
+.options_1__text.options_text {
+    width: 260px;
+}
+.options_1__text span {
+    font-size: 13px;
+    text-align: center;
+    display: inline-flex;
+    width: 75px;
+}
+.image3-text, .image4-text, .image5-text {
+    font-weight: 300;
+}
+.image3-retext, .image4-retext, .image5-retext {
+    font-weight: 600;
+}
+
+
+/* ==============КНОПКА============ */
+
+.global_btn_wrap {
+    width: 70%;
+    margin: 35px auto;
+
+}
+.comment {
+    margin: 35px auto 0 auto;
+    width: 700px;
+}
+
+.comment_text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px;
+}
+
 /* ====================================================== */
