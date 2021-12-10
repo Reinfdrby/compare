@@ -18,18 +18,43 @@
 <body>
     <div class="super-wrap">
         <div class="sub__wrap">
+
+<!-- =================================== ХЭДДЕР ======================================== -->
+
             <div class="header">
                 <div class="header__content">
                     <div class="head-left">
                         <a href="https://aeroexpress.ru/" title = "На главную"><img class="logo " src="im-aero/logo1.svg" alt=""></a>
                     </div>
+                    <!--  БЛОК КНОПОК  -->
+                    <div class="right_main_column">
+                        <div class="rmc__wraper">
+                            <div class="rmc__1">
+                                <img class="rmc__1__1 rmc__1" src="im-aero/r-phone.png" title="Позвоните нам!" alt="">
+                            </div>                           
+                            <div class="rmc__1">
+                                <a href="https://aeroexpress.ru/aero/feedback.html" title="Оставьте свое обращение"> <img class="rmc__1__1" src="im-aero/right-message-grey.png" alt=""></a>
+                            </div>
+                            <div class="rmc__1">
+                                <a href="https://aeroexpress.ru/ru/aero/search.html" title="Поиск по сайту"><img class="rmc__1__1" src="im-aero/right-loop-grey.png" alt=""></a>
+                            </div>
+                            <div class="rmc__1__2">
+                                <a href="https://aeroexpress.ru/aero.html" title="Переключиться на русский язык"><p class="rmc__1__2">РУС</p></a>
+                            </div> 
+                            <div class="rmc__1__3">
+                                <a href="https://aeroexpress.ru/en/aero.html" title="Turn to english"><p class="rmc__1__2">ENG</p></a>
+                            </div> 
+                        </div>
+                    </div>
                 </div>
             </div>
+
+<!-- =================================== КОНТЕНТ ======================================= -->
             <div class="main">
                 <div class="main__content">
                     <div class="lefcen_main_column">
                         
-<!--  БЛОК МЕНЮ  -->
+<!-- ================================= БЛОК МЕНЮ ======================================= -->
                         
                         <div class="left_center_col">
                             <div class="main-menu">
@@ -131,13 +156,15 @@
                             </div>
                         </div>
 
-<!--  ЦЕНТРАЛЬНЫЙ БЛОК  -->
-
+<!-- =============================== ЦЕНТРАЛЬНЫЙ БЛОК  =============+++================= -->
                         <div class="center_center_col">
+
+<!-- ================================= ВЕРХНИЙ БЛОК  =============+++=================== -->
                             <div class="center__item_1">
-                                <div class="center__item_1_1">
+                                <!--  ВЕРХНИЙ БАННЕР  -->
+                                 <!--<div class="center__item_1_1">
                                     <a href="https://aeroexpress.ru/promo-alfa" title="100% кэшбэк"><img class="slider" src="im-aero/banner-center1.png" alt=""></a>
-                                </div>
+                                </div>-->
                                 <div class="center__item_1_2 center__item_3_article">
                                     <span>Аэроэкспресс – удобный трансфер в аэропорты Москвы</span>
                                 </div>
@@ -145,6 +172,260 @@
                                     <p>Комфортабельные экспресс-поезда и автобусы между аэропортами Шереметьево, Домодедово, Внуково и центром Москвы. Бронирование экскурсий, покупка авиабилетов, сервисы для путешественников по всему миру.</p>
                                 </div>
                             </div>
+
+<!-- ================================= КАЛЬКУЛЯТОР  ==================================== -->
+                            <div class="calc_container">    <!--  обертка калькулятора  -->
+                                <div class="calc_container_another_wrap"> <!--  затемнение при выборе  -->
+                                </div>
+                                <div class="calc_choice">   <!--  строка выбора типа перевозки - ЖД/автобус  -->
+                                    <span class="bus-s calc_choice__item">Автобус -50%</span>
+                                    <span class="train calc_choice__item boom">Аэроэкспресс</span>
+                                    <span class="subs calc_choice__item">Подписка от 60₽</span> 
+                                    <!-- <div class="cc__items">
+                                        <p class="cc__items_1">-50%</p>
+                                    </div>
+                                    <div class="cc__items">
+                                        <img class="cc__items_2" src="calc/trian.png" alt="">
+                                    </div>
+                                    <div class="cc__items">
+                                        <p class="cc__items_3">от 60₽</p>
+                                    </div>-->
+                                </div>
+                                <div class="ticket_and_options">    <!--  основной блок с билетом и опциями акций и пассажиров  -->
+                                    <div class="ticket_and_options__ticket"> <!--  билет с результатами выбора  -->
+                                        <div class="ticket_and_options__ticket_1">
+                                            <div class="ticket_and_options__ticket__article"> <!--  наименование билета  -->
+                                                <span class="standart">БИЛЕТ “СТАНДАРТ”</span>
+                                                <span class="business-t-none">БИЛЕТ “БИЗНЕС”</span>
+                                                <span class="ex-bus-none">БИЛЕТ НА ЭКСПРЕСС-АВТОБУС "ХОВРИНО-ШЕРЕМЕТЬЕВО"></span>
+                                                <span class="subs30-none">ПОДПИСКА НА 30 ПОЕЗДОК В МЕСЯЦ</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__price"> <!--  цена билета  -->
+                                                <span class="standart">399</span>
+                                                <span class="business-t-none">899</span>
+                                                <span class="ex-bus-none">199</span>
+                                                <span class="subs30-none">1.800</span>
+                                                <span> ₽</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__discount"> <!--  линия с результатами скидок  -->
+                                                <div class="ticket_and_options__ticket__discount__old-item one-price">
+                                                    <span>450</span>
+                                                    <span> ₽</span>
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__decor">
+                                                    <img src="calc/lightning.png" alt="">
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__old-item discont">
+                                                    <span>-20</span>
+                                                    <span> %</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__article"><span class='article2'>КУПИТЬ</span></div>  <!--  линия "Купить"  -->
+                                        </div>
+                                        <div class="ticket_and_options__ticket_2">
+                                            <div class="passangers__go_man">
+                                                <img src="calc/man black.png" alt="">
+                                                <img src="calc/man black.png" alt="">
+                                                <img src="calc/man black.png" alt="">
+                                                <img src="calc/man black.png" alt="">
+                                                <img src="calc/man white.png" alt="">
+                                                <img src="calc/man white.png" alt="">
+                                            </div>
+                                                <div class="passangers__go_chil">
+                                                <img src="calc/child A.png" alt="">
+                                                <img src="calc/child A.png" alt="">
+                                                <img src="calc/child Z.png" alt="">
+                                                <img src="calc/child Z.png" alt="">
+                                                <img src="calc/child Z.png" alt="">
+                                                <img src="calc/child Z.png" alt="">
+                                            </div>
+                                            <div class="passangers__go_note">
+                                                <p>Дети до 5 лет - бесплатно</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ticket_and_options__item passengers">
+                                        <div class="promo__title">
+                                            <span>Пассажиры</span>
+                                        </div>
+                                        <div class="promo__choice-block">
+                                            <div class="promo__choice-block-items">
+                                                <img src="calc/man.png" alt="">
+                                                <span>4</span>
+                                            </div>
+                                            <div class="promo__choice-block-items">
+                                                <div class="promo__choice-block-items">
+                                                    <img class='child-im' src="calc/child A.png" alt="">
+                                                    <span>2</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="discount">
+                                            <span>-20</span>
+                                            <span>%</span>
+                                            <!--  <div class="promo__discount__before_5">
+                                                <span>до 5 лет - бесплатно</span>    
+                                            </div>-->   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ticket_and_options__options yes">   <!--  выбор опций  -->       
+                                    <div class="ticket_and_options__options_items"> <!--  блок опций #1  -  бизнес  -->       
+                                        <div class="options_1__business_opt">
+                                            <img class="image1 boom_image1" src="calc/ico/business no.png" alt="">
+                                            <img class="image1 reboom_image1" src="calc/ico/business rw.png" alt="">
+                                        </div>
+                                        <div class="options_1__text business">
+                                            <span>Бизнес-класс</span>
+                                        </div>
+                                    </div>  
+
+                                    <div class="ticket_and_options__options_items"> <!--  блок опций #3  -  акции  -->       
+                                        <div class="options_1__business_opt">
+                                            <img src="calc/ico/alpha.png" alt="">
+                                        </div>
+                                        <div class="options_1__text sale">
+                                            <span>Акция<br>от Альфа-банк</span>
+                                        </div>
+                                        <div class="discount">
+                                            <span>-99</span>
+                                            <span>%</span>
+                                        </div>
+                                    </div>  
+
+                                    <div class="ticket_and_options__options_items yes">     <!--  блок опций #2  -->       
+                                        <div class="options_1">
+                                            <img class="image3 boom_image3" src="calc/ico/options1 no.png" alt="">
+                                            <img class="image3 reboom_image3" src="calc/ico/options1 rw.png" alt="">
+                                            <img class="image4 boom_image4" src="calc/ico/options2 no.png" alt="">
+                                            <img class="image4 reboom_image4" src="calc/ico/options2 rw.png" alt="">
+                                            <img class="image5 boom_image5" src="calc/ico/options3 no.png" alt="">
+                                            <img class="image5 reboom_image5" src="calc/ico/options3 rw.png" alt="">
+                                            <span class='t_o__prefix'>Опции скидок</span>
+                                        </div>
+                                        <div class="options_1__text options_text">
+                                            <span class="image3-text">Туда и обратно</span>
+                                            <span class="image4-text">Заранее (от 2 дней)</span>
+                                            <span class="image5-text">Вечером (с 23:00)</span>
+                                        </div>
+                                        <div class="discount">
+                                            <span>-20</span>
+                                            <span>%</span>
+                                        </div>
+                                    </div> 
+                                </div>
+                                
+                                <div class="comment">
+                                    <p class="comment_text">Выбранный билет действует на протяжении 30 дней с даты покупки</p>
+                                    <p class="comment_text">Активированные скидки: за онлайн-покупку - 12%, раннее бронирование - 10%, за обратный билет - 15%,  за вечерний рейс (с 23:00 до 02:00) - 10%, за количество пассажиров/детей - 15%</p>
+                                </div> 
+                            </div>
+
+<!-- ================================= НОВОСТНЫЕ БЛОКИ  ======================================= -->
+                            <div class="center__item_3">
+                                <div class="center__item_3_article">
+                                    <p>Основные сервисы Аэроэкспресс</p>
+                                </div>
+                                <div class="center__item_3_row">
+                                    <div class="center__item_3_row_1">
+                                        <div class="center__item_3_row_1_1">
+                                            <div class="center__item_3_row_image_cont">
+                                                <img class="center__item_3_row_image" src="im-aero/white-many.png" alt="">
+                                            </div>
+                                            <div class="center__item_3_row_art">
+                                                <p>Корпоративным клиентам</p>
+                                            </div>
+                                            <div class="center__item_3_row_text">
+                                                <p>Специальный тариф для юридических лиц. Безналичная оплата</p>
+                                            </div>
+                                        </div>
+                                        <div class="center__item_3_row_button">
+                                            <img class="center__item_3_row_button" src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="center__item_3_row_1">
+                                        <div class="center__item_3_row_1_1">
+                                            <div class="center__item_3_row_image_cont">
+                                                <img class="center__item_3_row_image" src="im-aero/invalid.png" alt="">
+                                            </div>
+                                            <div class="center__item_3_row_art">
+                                                <p>Персональный помощник</p>
+                                            </div>
+                                            <div class="center__item_3_row_text ">
+                                                <p>Сервис для маломобильных пассажиров</p>
+                                            </div>
+                                        </div>
+                                        <div class="center__item_3_row_button">
+                                            <img class="center__item_3_row_button" src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="center__item_3_row_1">
+                                        <div class="center__item_3_row_1_1">
+                                            <div class="center__item_3_row_image_cont">
+                                                <img class="center__item_3_row_image" src="im-aero/white-present.png" alt="">
+                                            </div>
+                                            <div class="center__item_3_row_art">
+                                                <p>Аэроэкспресс ПРИВИЛЕГИЯ</p>
+                                            </div>
+                                            <div class="center__item_3_row_text">
+                                                <p>Накапливайте баллы за каждую поездку</p>
+                                            </div>
+                                        </div> 
+                                        <div class="center__item_3_row_button">
+                                            <img class="center__item_3_row_button" src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news">
+                                <div class="center__item_3_article">
+                                    <span>Новости</span>
+                                </div>
+                                <div class="news_line">
+                                    <div class="news_line_column">
+                                        <div class="news_line_column_pic_1"> 
+                                        </div>
+                                        <div class="news_line_column_date news_text">
+                                            <span>12.11.2021</span>
+                                        </div>
+                                        <div class="news_line_column_text news_text">
+                                            <span>Меры безопасности в поездах, автобусах и терминалах "Аэроэкспресс"</span>
+                                        </div>
+                                        <div class="news_line_column_link">
+                                            <img src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_line_column">
+                                        <div class="news_line_column_pic_2">
+                                        </div>
+                                        <div class="news_line_column_date news_text">
+                                            <span>12.11.2021</span>
+                                        </div>
+                                        <div class="news_line_column_text news_text">
+                                            <span>"Аэроэкспресс" проводит подготовку к работе в зимний сезон</span>
+                                        </div>
+                                        <div class="news_line_column_link">
+                                            <img src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="news_line_column">
+                                        <div class="news_line_column_pic_3">
+                                        </div>
+                                        <div class="news_line_column_date news_text">
+                                            <span>12.11.2021</span>
+                                        </div>
+                                        <div class="news_line_column_text news_text">
+                                            <span>"Аэроэкспресс" информирует об изменениях в расписании на Шереметьевском направлении с 30 октября</span>
+                                        </div>
+                                        <div class="news_line_column_link">
+                                            <img src="im-aero/white-right.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+<!-- ================================= ТАРИФЫ  ======================================= -->
+
                             <nav class="center_nav__container">
                                 <div data-filter="1" class="center_nav__items active"><span>ВСЕ</span></div>
                                 <div data-filter="2" class="center_nav__items"><span>СТАНДАРТ</span></div>
@@ -361,232 +642,33 @@
                                     <button class="goto"  type="submit"> тарифы </button>
                                 </form>
                             </div>
-                            <div class="center__item_3">
-                                <div class="center__item_3_article">
-                                    <p>Основные сервисы Аэроэкспресс</p>
-                                </div>
-                                <div class="center__item_3_row">
-                                    <div class="center__item_3_row_1">
-                                        <div class="center__item_3_row_1_1">
-                                            <div class="center__item_3_row_image_cont">
-                                                <img class="center__item_3_row_image" src="im-aero/white-many.png" alt="">
-                                            </div>
-                                            <div class="center__item_3_row_art">
-                                                <p>Корпоративным клиентам</p>
-                                            </div>
-                                            <div class="center__item_3_row_text">
-                                                <p>Специальный тариф для юридических лиц. Безналичная оплата</p>
-                                            </div>
-                                        </div>
-                                        <div class="center__item_3_row_button">
-                                            <img class="center__item_3_row_button" src="im-aero/white-right.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="center__item_3_row_1">
-                                        <div class="center__item_3_row_1_1">
-                                            <div class="center__item_3_row_image_cont">
-                                                <img class="center__item_3_row_image" src="im-aero/invalid.png" alt="">
-                                            </div>
-                                            <div class="center__item_3_row_art">
-                                                <p>Персональный помощник</p>
-                                            </div>
-                                            <div class="center__item_3_row_text ">
-                                                <p>Сервис для маломобильных пассажиров</p>
-                                            </div>
-                                        </div>
-                                        <div class="center__item_3_row_button">
-                                            <img class="center__item_3_row_button" src="im-aero/white-right.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="center__item_3_row_1">
-                                        <div class="center__item_3_row_1_1">
-                                            <div class="center__item_3_row_image_cont">
-                                                <img class="center__item_3_row_image" src="im-aero/white-present.png" alt="">
-                                            </div>
-                                            <div class="center__item_3_row_art">
-                                                <p>Аэроэкспресс ПРИВИЛЕГИЯ</p>
-                                            </div>
-                                            <div class="center__item_3_row_text">
-                                                <p>Накапливайте баллы за каждую поездку</p>
-                                            </div>
-                                        </div> 
-                                        <div class="center__item_3_row_button">
-                                            <img class="center__item_3_row_button" src="im-aero/white-right.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news">
-                                <div class="center__item_3_article">
-                                    <span>Новости</span>
-                                </div>
-                                <div class="news_line">
-                                    <div class="news_line_column">
-                                        <div class="news_line_column_pic_1"> 
-                                        </div>
-                                        <div class="news_line_column_date news_text">
-                                            <span>12.11.2021</span>
-                                        </div>
-                                        <div class="news_line_column_text news_text">
-                                            <span>Меры безопасности в поездах, автобусах и терминалах "Аэроэкспресс"</span>
-                                        </div>
-                                        <div class="news_line_column_link">
-                                            <img src="im-aero/white-right.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="news_line_column">
-                                        <div class="news_line_column_pic_2">
-                                        </div>
-                                        <div class="news_line_column_date news_text">
-                                            <span>12.11.2021</span>
-                                        </div>
-                                        <div class="news_line_column_text news_text">
-                                            <span>"Аэроэкспресс" проводит подготовку к работе в зимний сезон</span>
-                                        </div>
-                                        <div class="news_line_column_link">
-                                            <img src="im-aero/white-right.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="news_line_column">
-                                        <div class="news_line_column_pic_3">
-                                        </div>
-                                        <div class="news_line_column_date news_text">
-                                            <span>12.11.2021</span>
-                                        </div>
-                                        <div class="news_line_column_text news_text">
-                                            <span>"Аэроэкспресс" информирует об изменениях в расписании на Шереметьевском направлении с 30 октября</span>
-                                        </div>
-                                        <div class="news_line_column_link">
-                                            <img src="im-aero/white-right.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
 
-<!--  БЛОК БАННЕРОВ СПРАВА  -->
+<!-- =========================== БЛОК БАННЕРОВ СПРАВА  ================================= -->
 
                             <div class="right_center_col">
-                                <div class="side-board-none">
-                                </div>
-                                    <div class="side-board-1">
-                                        <a href="https://aeroexpress.ru/promo-alfa" title="100% кэшбэк"><img src="im-aero/r1.jpg" alt="Кэшбэк 100%"></a>
-                                    </div>
-                                    <div class="side-board-1">
-                                     <a href='https://aeroexpress.ru/avia/' title="Удобный поиск и бронирование авиабилетов"><img src="im-aero/r2.jpg" alt="">
-                                 </div>
+                                <a href="https://aeroexpress.ru/promo-alfa" title="100% кэшбэк"><img src="im-aero/r1.jpg" alt="Кэшбэк 100%"></a>
+                                <a href='https://aeroexpress.ru/avia/' title="Удобный поиск и бронирование авиабилетов"><img src="im-aero/r2.jpg" alt="">
                             </div>
-                    </div>
-
-<!--  БЛОК КНОПОК СПРАВА  -->
-
-                    <div class="right_main_column">
-                        <div class="rmc__wraper">
-                            <div class="rmc__1">
-                                <img class="rmc__1__1 rmc__1" src="im-aero/r-phone.png" title="Позвоните нам!" alt="">
-                            </div>                           
-                            <div class="rmc__1">
-                                <a href="https://aeroexpress.ru/aero/feedback.html" title="Оставьте свое обращение"> <img class="rmc__1__1" src="im-aero/right-message-grey.png" alt=""></a>
-                            </div>
-                            <div class="rmc__1">
-                                <a href="https://aeroexpress.ru/ru/aero/search.html" title="Поиск по сайту"><img class="rmc__1__1" src="im-aero/right-loop-grey.png" alt=""></a>
-                            </div>
-                            <div class="rmc__1__2">
-                                <a href="https://aeroexpress.ru/aero.html" title="Переключиться на русский язык"><p class="rmc__1__2">РУС</p></a>
-                            </div> 
-                            <div class="rmc__1__3">
-                                <a href="https://aeroexpress.ru/en/aero.html" title="Turn to english"><p class="rmc__1__2">ENG</p></a>
-                            </div> 
-                        </div>
                     </div>
                 </div>
             </div>
 
-<!--  ФУТЕР  -->
-
-                <!--  БЛОК КАЛЬКУЛЯТОРА ТАРИФОВ  -->
-            <div class="calc_container">    <!--  обертка калькулятора  -->
-                <div class="calc_choice">   <!--  строка выбора типа перевозки - ЖД/автобус  -->
-                    <span class="calc_choice__item">Автобус -50%</span>
-                    <span class="calc_choice__item boom">Аэроэкспресс</span>
-                    <span class="calc_choice__item">Подписка от 60₽</span>
-                </div>
-                <div class="ticket_and_options">    <!--  основной блок с билетом и опциями акций и пассажиров  -->
-                    <div class="ticket_and_options__item promo"> <!--  блок выбора акций  -->
-                        <div class="promo__title">
-                            <span>Акции</span>
-                        </div>
-                        <div class="promo__choice-block">
-                            <div class="promo__choice-block-items">
-                                <img src="calc/alpha.png" alt="">
-                            </div>
-                            <div class="promo__choice-block-items">
-                                <img src="calc/alpha.png" alt="">
-                            </div>
-                        </div>
-                        <div class="promo__discount discount">
-                            <span>-12</span>
-                            <span>%</span>
-                        </div>
-                    </div>
-                    <div class="ticket_and_options__ticket"> <!--  билет с результатами выбора  -->
-                        <div class="ticket_and_options__ticket__article"> <!--  наименование билета  -->
-                            <span>БИЛЕТ </span>
-                            <span>“СТАНДАРТ”</span>
-                        </div>
-                        <div class="ticket_and_options__ticket__price"> <!--  цена билета  -->
-                            <span class="total_price">399</span>
-                            <span> ₽</span>
-                        </div>
-                        <div class="ticket_and_options__ticket__discount"> <!--  линия с результатами скидок  -->
-                            <div class="ticket_and_options__ticket__discount__old-item one-price">
-                                <span>450</span>
-                                <span> ₽</span>
-                            </div>
-                            <div class="ticket_and_options__ticket__discount__decor">
-                                <img src="calc/lightning.png" alt="">
-                            </div>
-                            <div class="ticket_and_options__ticket__discount__old-item discont">
-                                <span>-20</span>
-                                <span> %</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ticket_and_options__item passengers">
-                        <div class="promo__title">
-                            <span>Пассажиры</span>
-                        </div>
-                        <div class="promo__choice-block">
-                            <div class="promo__choice-block-items">
-                                <img src="calc/man.png" alt="">
-                                <span>2</span>
-                            </div>
-                            <div class="promo__choice-block-items">
-                                <img src="calc/child B.png" alt="">
-                                <span class="pass">0</span>
-                            </div>
-                        </div>
-                        <div class="promo__discount discount">
-                            <span>-20</span>
-                            <span>%</span>
-                        </div>
-                        <div class="promo__discount__before_5">
-                            <span>до 5 лет - бесплатно</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- =================================  ФУТЕР  ========================================= -->
+              
             <div class="footer">
-                <div class="footer__content">
-                    <div class="foot__content">
-                        <p>© «Аэроэкспресс», 2021. Комфортабельные поезда в аэропорты Внуково, Домодедово и Шереметьево с Киевского, Павелецкого, Белорусского и Савеловского вокзалов Москвы и станций МЦК.</p>
-                    </div>
+                <div class="foot__content">
+                    <p>© «Аэроэкспресс», 2021. Комфортабельные поезда в аэропорты Внуково, Домодедово и Шереметьево с Киевского, Павелецкого, Белорусского и Савеловского вокзалов Москвы и станций МЦК.</p>
                 </div>
             </div>
         </div>
     </div>
+
+<!-- =================================  СКРИПТЫ  ========================================= -->
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
     <script async src="up_and_down.js"></script>
     <script async src='try_Dima.js'></script>
+    <script async src='calc.js'></script>
+
 </body>
 </html>
