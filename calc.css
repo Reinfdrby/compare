@@ -98,6 +98,7 @@
     cursor: pointer;
 }
 
+
 .promo__choice-block-items {
     display: flex;
     justify-content:space-around;
@@ -123,7 +124,7 @@
 }
 .non-active {
 }
-.discount {
+.discount, .discount-a {
     font-size: 18px;
     font-weight: 700;
     font-style: italic;
@@ -131,6 +132,11 @@
     border-radius: 17px;
     padding: 3px 5px;
     position: relative;
+}
+.no_d {
+    font-weight: 500!important;
+    background-color: #46df834a!important;
+    color: rgba(0, 0, 0, 0.535)!important;
 }
 .promo__discount__before_5 {
     position: absolute;
@@ -149,16 +155,21 @@
     flex: 1 1 70%;
     display: flex;
 }
-.ticket_and_options__ticket_1, .ticket_and_options__ticket_2 {
+.ticket_and_options__ticket_1_vis, 
+.ticket_and_options__ticket_2_vis,
+.ticket_and_options__ticket_3_vis,
+.ticket_and_options__ticket_4_vis,
+.ticket_and_options__ticket_5_vis,
+.ticket_and_options__ticket_6_vis {
     background: linear-gradient(to top left, #5C27FE, #C165DD);
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 200px;
+    height: 215px;
     width: 100%;
     max-width: 400px;
     margin: 0 auto 0 50px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 25px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
     -23px 0 20px -23px rgba(0, 0, 0, .8),
@@ -168,19 +179,36 @@
     z-index: 20;
     cursor: pointer;
 }
-.ticket_and_options__ticket_1 {
-    display: flex;
-}
-.ticket_and_options__ticket_2 {
-    display: none;
+.ticket_and_options__ticket_2_vis {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 15px 0 5px 0;
     align-items: center;
     z-index: 20;
 }
-
-.ticket_and_options__ticket_1:hover, .ticket_and_options__ticket_2:hover {
+.ticket_and_options__ticket_1_vis, 
+.ticket_and_options__ticket_2_vis, 
+.ticket_and_options__ticket_3_vis,
+.ticket_and_options__ticket_4_vis,
+.ticket_and_options__ticket_5_vis,
+.ticket_and_options__ticket_6_vis {
+    display: flex;
+    transition: all 300ms ease 0ms;
+}
+.ticket_and_options__ticket_1_novis, 
+.ticket_and_options__ticket_2_novis,
+.ticket_and_options__ticket_3_novis,
+.ticket_and_options__ticket_4_novis,
+.ticket_and_options__ticket_5_novis,
+.ticket_and_options__ticket_6_novis {
+    display: none;
+    transition: all 300ms ease 0ms;
+}
+.ticket_and_options__ticket_1_vis:hover,
+.ticket_and_options__ticket_3_vis:hover, 
+.ticket_and_options__ticket_4_vis:hover, 
+.ticket_and_options__ticket_5_vis:hover,  
+.ticket_and_options__ticket_6_vis:hover {
     box-shadow: 0 1px 8px rgba(0, 0, 0, 1),
     -30px 0 30px -23px rgba(0, 0, 0, .8),
     30px 0 30px -23px rgba(0, 0, 0, .8),
@@ -197,14 +225,14 @@
     position: absolute;
     height: 2px;
     background-color: #FBB11C;
-    width: 30px;
+    width: 20px;
     top: 10px;
 }
 .article2::after {
-    left: -40px;
+    left: -30px;
 }
 .article2::before {
-    right: -40px;
+    right: -30px;
 }
 .passangers__go_man {
     margin-bottom: 15px;
@@ -230,22 +258,24 @@
     color: white;
 }
 
-
-
 .ticket_and_options__ticket__article {
-    font-size: 20px;
+    display: block;
+    min-height: 35px;
+    max-height: 35px;
+    font-size: 19px;
     font-weight: 700;
     color: #ffff;
     text-shadow: 1px 1px 1px black;
     text-align: center;
-    padding: 0 30px;
+    padding: 10px 30px 0px;
 }
 .ticket_and_options__ticket__price {
-    font-size: 55px;
+    font-size: 65px;
     font-weight: 800;
     letter-spacing: 2px;
     color: #ffff;
-    text-shadow: 1px 1px 2px black
+    padding: 10px 0 0 0;
+    text-shadow: 1px 1px 1px black, 5px 5px 11px rgba(0, 0, 0, 0.7)
 }
 .standart, 
 .business-t, 
@@ -253,18 +283,43 @@
 .subs30 {
     display: inline-flex;
 }
-
-.standart-none, 
-.business-t-none, 
-.ex-bus-none, 
-.subs30-none {
+.standart-no, 
+.business-t-no, 
+.ex-bus-no, 
+.subs30-no {
     display: none;
 }
+.tuda {
+    display: inline-flex;
+}
+.tuda-no {
+    display: none;
+}
+.ticket_and_options__ticket__discount__decor img {
+    height: 30px;
+    width: 30px;
+    animation: light 15s ease infinite;
+}
+@keyframes light {
+    0% {transform: scale3d(1, 1, 1);}
+    10% {transform: scale3d(1.2, 1.2, 1);}
+    20% {transform: scale3d(1, 1, 1);} 
+    30% {transform: scale3d(1.2, 1.2, 1);}
+    40% {transform: scale3d(1, 1, 1);} 
+    50% {transform: rotate(-15deg);}
+    60% {transform: rotate(0deg);}
+    70% {transform: scale3d(1.2, 1.2, 1);}
+    80% {transform: scale3d(1, 1, 1);}
+    90% {transform: scale3d(1.2, 1.2, 1);}
+    100% {transform: scale3d(1, 1, 1);}
+}
+
 .ticket_and_options__ticket__discount {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    padding: 15px 0 0 0;
 }
 .ticket_and_options__ticket__discount__old-item {
     font-weight: 700;
@@ -273,6 +328,8 @@
     height: 35px;    
     border-radius: 17px;
     padding: 7px;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgba(29, 28, 28, 0.474);
 }
 .one-price {
     background-color: rgba(199, 34, 34, 1);
@@ -353,29 +410,32 @@
     border-radius: 17px;
     position: relative;
 }
-.boom_image1 {
+.boom_image1, .boom_image2, .boom_image3, .boom_image4, .boom_image5 {
     display: inherit;
     cursor: pointer;
 }
-.reboom_image1{
+.reboom_image1, .reboom_image2, .reboom_image3, .reboom_image4, .reboom_image5 {
     display: none;
     cursor: pointer;
 }
-
-.boom_image3, .boom_image4, .boom_image5 {
-    display: inherit;
-    cursor: pointer;
+.image2 {
+    filter: opacity(30%)
 }
-.reboom_image3, .reboom_image4, .reboom_image5 {
-    display: none;
-    cursor: pointer;
+.boom_image2 {
+    filter: opacity(100%)
 }
 .options_1__text.business span {
-    width: 100%;
-    margin-top: 6px ;
+    width: 110%;
+    text-align:center;
+}
+.business, .rebusiness {
+    padding: 6px 0 0 0;
+}
+.rebusiness, .sale {
+    font-weight: 600;
 }
 .options_1__text.sale span {
-    width: 100%;
+    width: 110%;
 }
 .options_1__text {
     display: flex;
@@ -398,7 +458,12 @@
 .image3-retext, .image4-retext, .image5-retext {
     font-weight: 600;
 }
-
+.plushki1, .plushki2 {
+    height: 20px;
+}
+.plushki-no {
+    display: none;
+}
 
 /* ==============КНОПКА============ */
 
