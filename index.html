@@ -181,48 +181,35 @@
                                     <span class="bus-s calc_choice__item">Автобус -50%</span>
                                     <span class="train calc_choice__item boom">Аэроэкспресс</span>
                                     <span class="subs calc_choice__item">Подписка от 60₽</span> 
-                                    <!-- <div class="cc__items">
-                                        <p class="cc__items_1">-50%</p>
-                                    </div>
-                                    <div class="cc__items">
-                                        <img class="cc__items_2" src="calc/trian.png" alt="">
-                                    </div>
-                                    <div class="cc__items">
-                                        <p class="cc__items_3">от 60₽</p>
-                                    </div>-->
                                 </div>
                                 <div class="ticket_and_options">    <!--  основной блок с билетом и опциями акций и пассажиров  -->
                                     <div class="ticket_and_options__ticket"> <!--  билет с результатами выбора  -->
-                                        <div class="ticket_and_options__ticket_1">
+                                        <div class="ticket_and_options__ticket_1_vis">
                                             <div class="ticket_and_options__ticket__article"> <!--  наименование билета  -->
                                                 <span class="standart">БИЛЕТ “СТАНДАРТ”</span>
-                                                <span class="business-t-none">БИЛЕТ “БИЗНЕС”</span>
-                                                <span class="ex-bus-none">БИЛЕТ НА ЭКСПРЕСС-АВТОБУС "ХОВРИНО-ШЕРЕМЕТЬЕВО"></span>
-                                                <span class="subs30-none">ПОДПИСКА НА 30 ПОЕЗДОК В МЕСЯЦ</span>
                                             </div>
                                             <div class="ticket_and_options__ticket__price"> <!--  цена билета  -->
-                                                <span class="standart">399</span>
-                                                <span class="business-t-none">899</span>
-                                                <span class="ex-bus-none">199</span>
-                                                <span class="subs30-none">1.800</span>
+                                                <span id='t_new_price' class="standart">400</span>
                                                 <span> ₽</span>
                                             </div>
                                             <div class="ticket_and_options__ticket__discount"> <!--  линия с результатами скидок  -->
                                                 <div class="ticket_and_options__ticket__discount__old-item one-price">
-                                                    <span>450</span>
+                                                    <span id='t_old_price' class="standart">450</span>
                                                     <span> ₽</span>
                                                 </div>
                                                 <div class="ticket_and_options__ticket__discount__decor">
                                                     <img src="calc/lightning.png" alt="">
                                                 </div>
                                                 <div class="ticket_and_options__ticket__discount__old-item discont">
-                                                    <span>-20</span>
+                                                    <span id='t_discount'>-11</span>
                                                     <span> %</span>
                                                 </div>
                                             </div>
-                                            <div class="ticket_and_options__ticket__article"><span class='article2'>КУПИТЬ</span></div>  <!--  линия "Купить"  -->
+                                            <div class="ticket_and_options__ticket__article"> <!--  линия "Купить"  -->
+                                                <span class='article2'>КУПИТЬ</span>
+                                            </div>  
                                         </div>
-                                        <div class="ticket_and_options__ticket_2">
+                                        <div class="ticket_and_options__ticket_2_novis">  <!--  выезжающий блок с выбором пассажиров  -->
                                             <div class="passangers__go_man">
                                                 <img src="calc/man black.png" alt="">
                                                 <img src="calc/man black.png" alt="">
@@ -242,6 +229,106 @@
                                             <div class="passangers__go_note">
                                                 <p>Дети до 5 лет - бесплатно</p>
                                             </div>
+                                        </div>
+                                        <div class="ticket_and_options__ticket_3_novis">  <!--  билет на автобус  -->
+                                            <div class="ticket_and_options__ticket__article"> <!--  наименование билета  -->
+                                                <span class="ex-bus">БИЛЕТ НА ЭКСПРЕСС-АВТОБУС "ХОВРИНО-ШЕРЕМЕТЬЕВО"</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__price"> <!--  цена билета  -->
+                                                <span class="ex-bus">199</span>
+                                                <span> ₽</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__discount"> <!--  линия с результатами скидок  -->
+                                                <div class="ticket_and_options__ticket__discount__old-item one-price">
+                                                    <span>300</span>
+                                                    <span> ₽</span>
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__decor">
+                                                    <img src="calc/lightning.png" alt="">
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__old-item discont">
+                                                    <span>-33</span>
+                                                    <span> %</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__article"> <!--  линия "Купить"  -->
+                                                <span class='article2'>КУПИТЬ</span>
+                                            </div>  
+                                        </div>
+                                        <div class="ticket_and_options__ticket_4_novis">  <!--  билет с подпиской  -->
+                                            <div class="ticket_and_options__ticket__article"> <!--  наименование билета  -->
+                                                <span class="subs30">30 ПОЕЗДОК В МЕСЯЦ</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__price"> <!--  цена билета  -->
+                                                <span class="ex-bus">1.800</span>
+                                                <span> ₽</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__discount"> <!--  линия с результатами скидок  -->
+                                                <div class="ticket_and_options__ticket__discount__old-item one-price">
+                                                    <span>3.600</span>
+                                                    <span> ₽</span>
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__decor">
+                                                    <img src="calc/lightning.png" alt="">
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__old-item discont">
+                                                    <span>-50</span>
+                                                    <span> %</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__article"> <!--  линия "Купить"  -->
+                                                <span class='article2'>КУПИТЬ</span>
+                                            </div>  
+                                        </div>
+                                        <div class="ticket_and_options__ticket_5_novis">  <!--  билет Бизнес  -->
+                                            <div class="ticket_and_options__ticket__article"> <!--  наименование билета  -->
+                                                <span class="business-t">БИЛЕТ “БИЗНЕС”</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__price"> <!--  цена билета  -->
+                                                <span class="business-t">899</span>
+                                                <span> ₽</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__discount"> <!--  линия с результатами скидок  -->
+                                                <div class="ticket_and_options__ticket__discount__old-item one-price">
+                                                    <span>999</span>
+                                                    <span> ₽</span>
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__decor">
+                                                    <img src="calc/lightning.png" alt="">
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__old-item discont">
+                                                    <span>-10</span>
+                                                    <span> %</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__article"> <!--  линия "Купить"  -->
+                                                <span class='article2'>КУПИТЬ</span>
+                                            </div>  
+                                        </div>
+                                        <div class="ticket_and_options__ticket_6_novis">   <!--  билет Альфа  -->
+                                            <div class="ticket_and_options__ticket__article"> <!--  наименование билета  -->
+                                                <span class="business-t">БИЛЕТ “АЛЬФА-СТАНДАРТ”</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__price"> <!--  цена билета  -->
+                                                <span class="business-t">1</span>
+                                                <span> ₽</span>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__discount"> <!--  линия с результатами скидок  -->
+                                                <div class="ticket_and_options__ticket__discount__old-item one-price">
+                                                    <span>450</span>
+                                                    <span> ₽</span>
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__decor">
+                                                    <img src="calc/lightning.png" alt="">
+                                                </div>
+                                                <div class="ticket_and_options__ticket__discount__old-item discont">
+                                                    <span>-99</span>
+                                                    <span> %</span>
+                                                </div>
+                                            </div>
+                                            <div class="ticket_and_options__ticket__article"> <!--  линия "Купить"  -->
+                                                <span class='article2'>КУПИТЬ</span>
+                                            </div>  
                                         </div>
                                     </div>
                                     <div class="ticket_and_options__item passengers">
@@ -263,32 +350,31 @@
                                         <div class="discount">
                                             <span>-20</span>
                                             <span>%</span>
-                                            <!--  <div class="promo__discount__before_5">
-                                                <span>до 5 лет - бесплатно</span>    
-                                            </div>-->   
                                         </div>
                                     </div>
                                 </div>
                                 <div class="ticket_and_options__options yes">   <!--  выбор опций  -->       
                                     <div class="ticket_and_options__options_items"> <!--  блок опций #1  -  бизнес  -->       
-                                        <div class="options_1__business_opt">
+                                        <div class="bus8 options_1__business_opt">
                                             <img class="image1 boom_image1" src="calc/ico/business no.png" alt="">
                                             <img class="image1 reboom_image1" src="calc/ico/business rw.png" alt="">
                                         </div>
                                         <div class="options_1__text business">
-                                            <span>Бизнес-класс</span>
+                                            <div>Бизнес-класс</div>
                                         </div>
+                                            <img class="plushki1" src="calc/ico/business-items-no.png" alt="">
+                                            <img class="plushki2 plushki-no" src="calc/ico/business-items-yes.png" alt="">
                                     </div>  
 
                                     <div class="ticket_and_options__options_items"> <!--  блок опций #3  -  акции  -->       
                                         <div class="options_1__business_opt">
-                                            <img src="calc/ico/alpha.png" alt="">
+                                            <img class="image2"src="calc/ico/alpha.png" alt="">
                                         </div>
-                                        <div class="options_1__text sale">
-                                            <span>Акция<br>от Альфа-банк</span>
+                                        <div class="options_1__text resale">
+                                            <span>Акция от<br>Альфа-банк</span>
                                         </div>
-                                        <div class="discount">
-                                            <span>-99</span>
+                                        <div class="discount-a no_d">
+                                            <span>- 99</span>
                                             <span>%</span>
                                         </div>
                                     </div>  
@@ -308,13 +394,14 @@
                                             <span class="image4-text">Заранее (от 2 дней)</span>
                                             <span class="image5-text">Вечером (с 23:00)</span>
                                         </div>
-                                        <div class="discount">
-                                            <span>-20</span>
+                                        <div  class="discount disc-op no_d">
+                                            <span>до</span>
+                                            <span>-</span>
+                                            <span id='t_discount2'>35</span>
                                             <span>%</span>
                                         </div>
                                     </div> 
-                                </div>
-                                
+                                </div>                                
                                 <div class="comment">
                                     <p class="comment_text">Выбранный билет действует на протяжении 30 дней с даты покупки</p>
                                     <p class="comment_text">Активированные скидки: за онлайн-покупку - 12%, раннее бронирование - 10%, за обратный билет - 15%,  за вечерний рейс (с 23:00 до 02:00) - 10%, за количество пассажиров/детей - 15%</p>
