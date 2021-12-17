@@ -274,6 +274,7 @@ $(document).ready(function() {
             vis5.classList.remove('ticket_and_options__ticket_5_vis');
         };
         console.log(busi)
+        document.querySelector('.busi__condition').classList.toggle('del');
     });
 });
 
@@ -303,6 +304,7 @@ $(document).ready(function() {
             vis6.classList.add('ticket_and_options__ticket_6_novis');
             vis6.classList.remove('ticket_and_options__ticket_6_vis'); 
         };
+        document.querySelector('.alpha__condition').classList.toggle('del');
     });
 });
 
