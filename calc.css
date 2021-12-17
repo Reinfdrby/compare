@@ -1,37 +1,63 @@
 .calc_container {
     max-width: 1100px;
-    margin: 40px auto 70px auto;
+    margin: 5px auto 70px auto;
 
 }
-.calc_container_another_wrap {
-    display: none;
-    position:absolute;
-    min-width: 100%;
-    min-height: 5000px;
-    background: rgb(145, 135, 145);
-    z-index: 10;
-    top: 0;
-    left: 0;
-}
-
 .calc_choice {
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 10px 50px;
+    margin: 0px 10px 50px;
+}
+@media (max-width: 420px) {
+    .calc_choice {
+        margin: 10px 5px 20px;
+    }
 }
 
 .calc_choice__item {
     font-weight: 700;
     font-size: 22px;
-    color: rgba(104, 104, 104, 1);
+    color: rgb(146, 145, 145);
     padding: 0 25px;
     position: relative;
     text-align: center;
     cursor: pointer;
 }
+@media (max-width: 420px) {
+    .calc_choice__item {
+        font-size: 15px;
+        padding: 0 10px;
+        flex: 0 0 33.333%;
+    }
+}
 .calc_choice__item.boom {
-    color: rgba(214, 58, 58, 1);
-    text-decoration: underline; 
+    color: rgb(39, 34, 34);
+}
+.train.calc_choice__item.boom::before,
+.bus-s.calc_choice__item.boom::before {
+    content: ' ';
+    position: absolute;
+    top: 25px;
+    left: 23px;
+    width: 152px;
+    height: 2px;
+    background-color: rgb(39, 34, 34);
+}
+.subs.calc_choice__item.boom::before {
+    content: ' ';
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 177px;
+    height: 2px;
+    background-color: rgb(39, 34, 34);
+}
+@media (max-width: 420px) {
+    .train.calc_choice__item.boom::before,
+    .bus-s.calc_choice__item.boom::before,
+    .subs.calc_choice__item.boom::before {
+        display: none;
+    }
 }
 
 .calc_choice__item:first-child::after,
@@ -42,8 +68,16 @@
     left: -12px;
     width: 30px;
     height: 35px;
-    background: url('calc/lightning.png') no-repeat;
+    background: url('calc/lightning.png') 10px 7px / 22px 22px no-repeat;
 } 
+@media (max-width: 420px) {
+    .calc_choice__item:first-child::after,
+    .calc_choice__item:last-child::after {
+        font-size: 15px;
+        padding: 0 10px;
+        background: transparent;
+    }
+}
 
 
 /* ========= ОБЩИЙ ДЛЯ ВЫБОРА ОПЦИЙ ============ */
@@ -55,6 +89,13 @@
     width: 75%;
     min-width: 600px;
 }
+@media (max-width: 420px) {
+    .ticket_and_options {
+        display: block;
+        min-width: 100%;
+        margin: 0 auto 10px auto;
+    }
+}
 
 .ticket_and_options__item {
     display: flex;
@@ -63,20 +104,64 @@
     align-items: center;
     flex: 1 1 30%;
 }
-.ticket_and_options__item.promo {
-
+.pass420 {
+    display: none;
+}
+@media (max-width: 420px) {
+    .pass420 {
+        display: block;
+        background: linear-gradient(to top left, #8778C7 0%, #ABF8E7 100%);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .2),
+        -23px 0 20px -23px rgba(0, 0, 0, .2),
+        23px 0 20px -23px rgba(0, 0, 0, .2),
+        0 0 40px rgba(0, 0, 0, .1) inset;
+        height: 25px;
+        width: 250px;
+        margin: 0px auto 15px;
+        justify-content:  space-around;
+        align-items: center;
+        border-radius: 0px 0px 17px 17px;
+        position: relative;
+    }
+}
+.pass420_t {
+    display: none;
+}
+@media (max-width: 420px) {
+    .pass420_t {
+        display: block;
+        margin: 0 auto;
+        padding-top: 3px;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+@media (max-width: 420px) {
+    .ticket_and_options__item {
+        display: none;
+    }
 }
 .ticket_and_options__item.passengers {
     position: relative;
     display: flex;
 }
-
+@media (max-width: 420px) {
+    .ticket_and_options__item.passengers {
+        display: none;
+    }
+}
 
 /* ========= БЛОК АКЦИЙ И ПАССАЖИРОВ ============ */
 .promo__title {
     flex: 0 0 auto;
     font-size: 15px;
     font-weight: 300;
+}
+@media (max-width: 420px) {
+    .promo__title {
+        display: none;
+    }
 }
 .promo__choice-block {
     flex: 1 1 70%;
@@ -97,13 +182,22 @@
     align-items: center;
     cursor: pointer;
 }
-
+@media (max-width: 420px) {
+    .promo__choice-block {
+        width: 100%;
+        height: 50px;
+        background: none;
+        box-shadow: none;
+        flex-direction: row;
+    }
+}
 
 .promo__choice-block-items {
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
+
 .promo__choice-block-items img {
     width: 44px;
     height: 44px;
@@ -133,6 +227,11 @@
     padding: 3px 5px;
     position: relative;
 }
+@media (max-width: 420px) {
+    .discount.d1, .discount-a.d1, .d2 {
+        display: none;
+    }
+}
 .no_d {
     font-weight: 500!important;
     background-color: #46df834a!important;
@@ -154,6 +253,13 @@
 .ticket_and_options__ticket {
     flex: 1 1 70%;
     display: flex;
+}
+@media (max-width: 420px) {
+    .ticket_and_options__ticket {
+        width: 100%;
+        flex: 0 0 100%;
+        margin: 0 auto;
+    }
 }
 .ticket_and_options__ticket_1_vis, 
 .ticket_and_options__ticket_2_vis,
@@ -179,6 +285,18 @@
     z-index: 20;
     cursor: pointer;
 }
+@media (max-width: 420px) {
+    .ticket_and_options__ticket_1_vis, 
+    .ticket_and_options__ticket_2_vis,
+    .ticket_and_options__ticket_3_vis,
+    .ticket_and_options__ticket_4_vis,
+    .ticket_and_options__ticket_5_vis,
+    .ticket_and_options__ticket_6_vis {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
 .ticket_and_options__ticket_2_vis {
     flex-direction: column;
     justify-content: space-evenly;
@@ -193,7 +311,6 @@
 .ticket_and_options__ticket_5_vis,
 .ticket_and_options__ticket_6_vis {
     display: flex;
-    transition: all 300ms ease 0ms;
 }
 .ticket_and_options__ticket_1_novis, 
 .ticket_and_options__ticket_2_novis,
@@ -202,7 +319,6 @@
 .ticket_and_options__ticket_5_novis,
 .ticket_and_options__ticket_6_novis {
     display: none;
-    transition: all 300ms ease 0ms;
 }
 .ticket_and_options__ticket_1_vis:hover,
 .ticket_and_options__ticket_3_vis:hover, 
@@ -289,11 +405,19 @@
 .subs30-no {
     display: none;
 }
+@media (max-width: 380px) {
+    .ex-bus.media380 {
+        font-size: 15px;
+    }
+}
 .tuda {
     display: inline-flex;
 }
 .tuda-no {
     display: none;
+}
+.min_text {
+    font-size: 14px;
 }
 .ticket_and_options__ticket__discount__decor img {
     height: 30px;
@@ -347,10 +471,27 @@
 .ticket_and_options__options.yes {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: baseline;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    gap: 50px;
+}
+@media (max-width: 1300px) {
+    .ticket_and_options__options.yes {
+        width: 80%;
+        gap: 15px;
+    }
+}
+@media (max-width: 380px) {
+    .ticket_and_options__options.yes {
+        gap: 50px;
+    }
+}
+@media (max-width: 380px) {
+    .ticket_and_options__options.yes {
+        width: 100%;
+        gap: 20px;
+    }
 }
 .ticket_and_options__options.no {
     display: none;
@@ -375,10 +516,20 @@
     border-radius: 17px;
     position: relative;
 }
+@media (max-width: 420px) {
+    .options_1 {
+        margin-top: 0px;
+    }
+}
 .t_o__prefix {
     position: absolute;   
     top: -20px;
     left: 30%;
+}
+@media (max-width: 420px) {
+    .t_o__prefix {
+        display: none;
+    }
 }
 .options_1 img {
     height: 50px;
@@ -443,6 +594,16 @@
     margin-bottom: 7px;
     gap: 6px;
 }
+@media (max-width: 420px) {
+    .options_1__text {
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 420px) {
+    .options_1__text.options_text {
+        margin-bottom: 7px;
+    }
+}
 .options_1__text.options_text {
     width: 260px;
 }
@@ -464,17 +625,61 @@
 .plushki-no {
     display: none;
 }
+@media (max-width: 420px) {
+    .plushki1, .plushki2 {
+        display: none;
+    }
+}
 
 /* ==============КНОПКА============ */
 
 .global_btn_wrap {
     width: 70%;
     margin: 35px auto;
-
 }
+
+.conditions {
+    width: 90%;
+    padding: 15px;
+    margin: 33px auto;
+    background: linear-gradient(to top left, #8778C7 0%, #ABF8E7 100%);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .2),
+    -23px 0 20px -23px rgba(0, 0, 0, .2),
+    23px 0 20px -23px rgba(0, 0, 0, .2),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    transition: all 300ms ease 0ms;
+}
+.conditions p:first-child,
+.conditions p:last-child {
+    font-weight: 600;
+    display: inline-block;
+    margin: 8px;
+}
+.conditions::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid #9BCDD5;
+    top: -15px;
+    left: 47%;
+}
+.conditions {
+    display: block;
+}
+.alpha__condition.del,
+.busi__condition.del {
+    display: none;
+}
+
 .comment {
     margin: 35px auto 0 auto;
-    width: 700px;
+    width: 80%;
 }
 
 .comment_text {
@@ -485,4 +690,55 @@
     margin-bottom: 10px;
 }
 
-/* ====================================================== */
+
+/* =====================  ПОПАП ОПЛАТА  ============================ */
+
+.popup_buy {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    transition: all 500ms ease 0ms;
+}
+.popup_buy:target {
+    opacity: 1;
+    visibility: visible;
+}
+.popup_buy:target .popup_buy_content{
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+.popup_buy_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 40%;
+    min-width: 200px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 7px;
+    opacity: 0;
+    transform: translate(0px, -100%);
+    transition: all 500ms ease 0ms;
+}
+.popup_buy_content img {
+    margin: 30px 0 0 0;
+}
+
+.popup_buy_content_text {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: black;
+}
