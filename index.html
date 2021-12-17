@@ -16,6 +16,12 @@
     <link rel="shortcut icon" href="im-aero/favicon.png" type="image/png">
 </head>
 <body>
+    <div id='pop1' class="popup_buy">
+        <div class="popup_buy_content">
+            <img src="calc/ico/pay.png" alt="">
+            <a href="#"><div class="popup_buy_content_text">ОПЛАТИТЬ</div></a>
+        </div>
+    </div>
     <div class="super-wrap">
         <div class="sub__wrap">
 
@@ -160,23 +166,9 @@
                         <div class="center_center_col">
 
 <!-- ================================= ВЕРХНИЙ БЛОК  =============+++=================== -->
-                            <div class="center__item_1">
-                                <!--  ВЕРХНИЙ БАННЕР  -->
-                                 <!--<div class="center__item_1_1">
-                                    <a href="https://aeroexpress.ru/promo-alfa" title="100% кэшбэк"><img class="slider" src="im-aero/banner-center1.png" alt=""></a>
-                                </div>-->
-                                <div class="center__item_1_2 center__item_3_article">
-                                    <span>Аэроэкспресс – удобный трансфер в аэропорты Москвы</span>
-                                </div>
-                                <div class="center__item_1_3">
-                                    <p>Комфортабельные экспресс-поезда и автобусы между аэропортами Шереметьево, Домодедово, Внуково и центром Москвы. Бронирование экскурсий, покупка авиабилетов, сервисы для путешественников по всему миру.</p>
-                                </div>
-                            </div>
 
 <!-- ================================= КАЛЬКУЛЯТОР  ==================================== -->
                             <div class="calc_container">    <!--  обертка калькулятора  -->
-                                <div class="calc_container_another_wrap"> <!--  затемнение при выборе  -->
-                                </div>
                                 <div class="calc_choice">   <!--  строка выбора типа перевозки - ЖД/автобус  -->
                                     <span class="bus-s calc_choice__item">Автобус -50%</span>
                                     <span class="train calc_choice__item boom">Аэроэкспресс</span>
@@ -206,7 +198,7 @@
                                                 </div>
                                             </div>
                                             <div class="ticket_and_options__ticket__article"> <!--  линия "Купить"  -->
-                                                <span class='article2'>КУПИТЬ</span>
+                                                <a href="#pop1"><span class='article2'>КУПИТЬ</span></a>                                                
                                             </div>  
                                         </div>
                                         <div class="ticket_and_options__ticket_2_novis">  <!--  выезжающий блок с выбором пассажиров  -->
@@ -232,7 +224,7 @@
                                         </div>
                                         <div class="ticket_and_options__ticket_3_novis">  <!--  билет на автобус  -->
                                             <div class="ticket_and_options__ticket__article"> <!--  наименование билета  -->
-                                                <span class="ex-bus">БИЛЕТ НА ЭКСПРЕСС-АВТОБУС "ХОВРИНО-ШЕРЕМЕТЬЕВО"</span>
+                                                <span class="ex-bus media380">БИЛЕТ НА ЭКСПРЕСС-АВТОБУС "ХОВРИНО-ШЕРЕМЕТЬЕВО"</span>
                                             </div>
                                             <div class="ticket_and_options__ticket__price"> <!--  цена билета  -->
                                                 <span class="ex-bus">199</span>
@@ -265,8 +257,8 @@
                                             </div>
                                             <div class="ticket_and_options__ticket__discount"> <!--  линия с результатами скидок  -->
                                                 <div class="ticket_and_options__ticket__discount__old-item one-price">
-                                                    <span>3.600</span>
-                                                    <span> ₽</span>
+                                                    <span class="min_text">3.600</span>
+                                                    <span class="min_text"> ₽</span>
                                                 </div>
                                                 <div class="ticket_and_options__ticket__discount__decor">
                                                     <img src="calc/lightning.png" alt="">
@@ -331,6 +323,9 @@
                                             </div>  
                                         </div>
                                     </div>
+                                    <div class="pass420">
+                                        <div class="pass420_t">1 пассажир</div>                                        
+                                    </div>
                                     <div class="ticket_and_options__item passengers">
                                         <div class="promo__title">
                                             <span>Пассажиры</span>
@@ -347,7 +342,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="discount">
+                                        <div class="discount d1">
                                             <span>-20</span>
                                             <span>%</span>
                                         </div>
@@ -373,7 +368,7 @@
                                         <div class="options_1__text resale">
                                             <span>Акция от<br>Альфа-банк</span>
                                         </div>
-                                        <div class="discount-a no_d">
+                                        <div class="discount-a no_d d2">
                                             <span>- 99</span>
                                             <span>%</span>
                                         </div>
@@ -401,7 +396,17 @@
                                             <span>%</span>
                                         </div>
                                     </div> 
-                                </div>                                
+                                </div>     
+                                <div class="conditions alpha__condition del">
+                                    <p>УСЛОВИЯ АКЦИИ</p>
+                                    <p>Электронная карта - Бесплатный выпуск - Возврат на карту до 399 руб. за первую поездку - Кэшбек в течение 10 дней - Оформление за 1 минуту </p>
+                                    <p>Не для действующих клиентов Альфа-Банка</p>
+                                </div>     
+                                <div class="conditions busi__condition del">
+                                    <p>УСЛОВИЯ ТАРИФА</p>
+                                    <p>Одна поездка в вагоне Бизнес-класса Аэроэкспресс строго в соответствии с датой, временем и маршрутом, указанными в билете (выбранными при покупке). В стоимость входит гарантированное посадочное место повышенной комфортности, горячие напитки, вода. Приобретение билета возможно за 90 суток до предполагаемой даты поездки, включая день предполагаемой поездки. Однократное изменение реквизитов электронного билета возможно за 30 минут до отправления рейса. </p>
+                                    <p>Приятной поездки!</p>
+                                </div>                         
                                 <div class="comment">
                                     <p class="comment_text">Выбранный билет действует на протяжении 30 дней с даты покупки</p>
                                     <p class="comment_text">Активированные скидки: за онлайн-покупку - 12%, раннее бронирование - 10%, за обратный билет - 15%,  за вечерний рейс (с 23:00 до 02:00) - 10%, за количество пассажиров/детей - 15%</p>
@@ -409,6 +414,18 @@
                             </div>
 
 <!-- ================================= НОВОСТНЫЕ БЛОКИ  ======================================= -->
+                            <div class="center__item_1">
+                                <!--  ВЕРХНИЙ БАННЕР  -->
+                                <!--<div class="center__item_1_1">
+                                    <a href="https://aeroexpress.ru/promo-alfa" title="100% кэшбэк"><img class="slider" src="im-aero/banner-center1.png" alt=""></a>
+                                </div>-->
+                                <div class="center__item_1_2 center__item_3_article">
+                                    <span>Аэроэкспресс – удобный трансфер в аэропорты Москвы</span>
+                                </div>
+                                <div class="center__item_1_3">
+                                    <p>Комфортабельные экспресс-поезда и автобусы между аэропортами Шереметьево, Домодедово, Внуково и центром Москвы. Бронирование экскурсий, покупка авиабилетов, сервисы для путешественников по всему миру.</p>
+                                </div>
+                            </div>
                             <div class="center__item_3">
                                 <div class="center__item_3_article">
                                     <p>Основные сервисы Аэроэкспресс</p>
@@ -733,10 +750,10 @@
 
 <!-- =========================== БЛОК БАННЕРОВ СПРАВА  ================================= -->
 
-                            <div class="right_center_col">
-                                <a href="https://aeroexpress.ru/promo-alfa" title="100% кэшбэк"><img src="im-aero/r1.jpg" alt="Кэшбэк 100%"></a>
-                                <a href='https://aeroexpress.ru/avia/' title="Удобный поиск и бронирование авиабилетов"><img src="im-aero/r2.jpg" alt="">
-                            </div>
+                        <div class="right_center_col">
+                            <a href="https://aeroexpress.ru/promo-alfa" title="100% кэшбэк"><img src="im-aero/r1.jpg" alt="Кэшбэк 100%"></a>
+                            <a href='https://aeroexpress.ru/avia/' title="Удобный поиск и бронирование авиабилетов"><img src="im-aero/r2.jpg" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -750,6 +767,7 @@
             </div>
         </div>
     </div>
+
 
 <!-- =================================  СКРИПТЫ  ========================================= -->
     <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
